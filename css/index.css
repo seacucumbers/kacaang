@@ -12,46 +12,83 @@
     font-family: 'Comfortaa', sans-serif;
 */
 
+/* GLOBAL VARIABLES */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 li {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+p {
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.Kacaang-logo {
+    padding-top: 1rem;
+    height: 3.5rem;
+}
+
+/* NON-GLOBAL VARIABLES */
 .above-nav {
     width: 100%;
-    height: 80px;
-    background-image: url(../images/above_nav.png);
-    background-size: cover;
+    height: 3rem;
+    background-image: url(../images/above-nav.png);
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position-x: center;
-    margin: 0px;
 }
 
 .logo-bar {
     width: 100%;
-    height: 80px;
-    background-image: url(../images/logo_bg_nav.png);
-    background-size: cover;
+    height: 5rem;
+    background-image: url(../images/logo-bg-nav.png);
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position-x: center;
+    align-items: center;
+    text-align: center;
 }
 
 .navbar {
     width: 100%;
-    position: fixed; 
-    height: 80px;
+    height: 4rem;
     background-image: url(../images/navbar-bg.png);
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position-x: center;
+    /* display: flex; */
+    align-items: center;
+    text-align: center;
     z-index: 10;
+}
+  
+.navbar-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 3.5rem 0.5rem 3.5rem;
+    /* gap: 3.5rem; */
+    align-items: center;
+    text-align: center;
+}
+
+.navbar-list a {
+    color: #3A2817;
 }
 
 footer {
-    left: 0;
-    bottom: 0;
     width: 100%;
-    color: #3A2817;
+    height: 250px;
+    background-color: #3A2817;
     align-items: center;
+    color: #EDA23F;
 }
   
 .footer-grid {
@@ -59,15 +96,33 @@ footer {
     grid-template-columns: 25% 25% 25% 25%;
 }
 
+.footer-link {
+    text-decoration: none;
+    color: #EDA23F;
+}
+
 .footer-list {
     list-style: none;
 }
 
+.fa-brands {
+    font-size: 22px;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 8px;
+    font-size: 12px;
+}
+
 .below-footer {
     width: 100%;
-    height: 80px;
+    height: 40px;
     background-image: url(../images/below-footer.png);
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position-x: center;
 }
