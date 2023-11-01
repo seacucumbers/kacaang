@@ -78,7 +78,7 @@ body {
     z-index: 10;
 }
   
-.nav-link {
+.navbar-nav {
     display: flex;
     justify-content: space-between;
     padding: 10px 60px 10px 60px;
@@ -86,7 +86,7 @@ body {
     text-align: center;
 }
 
-.nav-link a {
+.navbar-nav a {
     color: #3A2817;
 }
 
