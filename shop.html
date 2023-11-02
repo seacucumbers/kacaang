@@ -2,10 +2,447 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>SHOP - KACAANG </title>
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+    <!--css / fonts-->
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Paytone+One&family=Titan+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--javascript-->
+    <script src="scripts/shopTabs.js"></script>
   </head>
+  <header>
+
+  </header>
   <body>
-    <p>HELLO TESTING</p>
+    <div class="page-10-percent">
+      <!-- tab buttons -->
+      <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'all')" id="defaultOpen">All</button>
+        <button class="tablinks" onclick="openTab(event, 'sales')">On Sale</button>
+        <button class="tablinks" onclick="openTab(event, 'new')">New</button>
+        <button class="tablinks" onclick="openTab(event, 'favourites')">Fan Favourites</button>
+        <button class="tablinks" onclick="openTab(event, 'classics')">Classics</button>
+        <button class="tablinks" onclick="openTab(event, 'local')">Local Delights</button>
+        <button class="tablinks" onclick="openTab(event, 'bundle')">Bundles</button>
+      </div>
+
+      <!-- tab content -->
+
+      <!-- all products -->
+      <div id="all" class="tabcontent">
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/chilli-crab-cashews.png" class="shop-product-img">
+            <h4> Black Pepper Cashews</h4>
+            <div class="shop-review-line">
+              <p><img src="images/stars.png" alt="" height="12"> 1 review</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/chilli-crab-cashews.png" class="shop-product-img">
+            <h4> Chilli Crab Cashews</h4>
+            <div class="shop-review-line">
+              <p><img src="images/stars.png" alt="" height="12"> 1 review</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/chilli-crab-cashews.png" class="shop-product-img">
+            <h4> Chocolate Cashews</h4>
+            <div class="shop-review-line">
+              <p><img src="images/stars.png" alt="" height="12"> 1 review</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/chilli-crab-cashews.png" class="shop-product-img">
+            <h4> Laksa Cashews</h4>
+            <div class="shop-review-line">
+              <p><img src="images/stars.png" alt="" height="12"> 1 review</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/chilli-crab-cashews.png" class="shop-product-img">
+            <h4> Lotus Biscoff Cashews</h4>
+            <div class="shop-review-line">
+              <p><img src="images/stars.png" alt="" height="12"> 1 review</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/chilli-crab-cashews.png" class="shop-product-img">
+            <h4> Mala Cashews</h4>
+            <div class="shop-review-line">
+              <p><img src="images/stars.png" alt="" height="12"> 1 review</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/chilli-crab-cashews.png" class="shop-product-img">
+            <h4> Roasted Cashews</h4>
+            <div class="shop-review-line">
+              <p><img src="images/stars.png" alt="" height="12"> 1 review</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/chilli-crab-cashews.png" class="shop-product-img">
+            <h4> Salted Egg and Cheese Cashews</h4>
+            <div class="shop-review-line">
+              <p><img src="images/stars.png" alt="" height="12"> 1 review</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/chilli-crab-cashews.png" class="shop-product-img">
+            <h4> Smoky BBQ Cashews</h4>
+            <div class="shop-review-line">
+              <p><img src="images/stars.png" alt="" height="12"> 1 review</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/chilli-crab-cashews.png" class="shop-product-img">
+            <h4> Bundle A</h4>
+            <div class="shop-review-line">
+              <p><img src="images/stars.png" alt="" height="12"> 1 review</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/chilli-crab-cashews.png" class="shop-product-img">
+            <h4> Bundle B</h4>
+            <div class="shop-review-line">
+              <p><img src="images/stars.png" alt="" height="12"> 1 review</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/chilli-crab-cashews.png" class="shop-product-img">
+            <h4> Bundle C</h4>
+            <div class="shop-review-line">
+              <p><img src="images/stars.png" alt="" height="12"> 1 review</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+
+      </div>
+
+      <!-- On Sale -->
+      <div id="sales" class="tabcontent">
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/chilli-crab-cashews.png" class="shop-product-img">
+            <h4>  Mala Cashews</h4>
+            <div class="shop-review-line">
+              <p><img src="images/stars.png" alt="" height="12"> 1 review</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/chilli-crab-cashews.png" class="shop-product-img">
+            <h4> Bundle A</h4>
+            <div class="shop-review-line">
+              <p><img src="images/stars.png" alt="" height="12"> 1 review</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- new products-->
+      <div id="new" class="tabcontent">
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/chilli-crab-cashews.png" class="shop-product-img">
+            <h4>  Laksa Cashews </h4>
+            <div class="shop-review-line">
+              <p><img src="images/stars.png" alt="" height="12"> 1 review</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/chilli-crab-cashews.png" class="shop-product-img">
+            <h4> Lotus Biscoff Cashews</h4>
+            <div class="shop-review-line">
+              <p><img src="images/stars.png" alt="" height="12"> 1 review</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/chilli-crab-cashews.png" class="shop-product-img">
+            <h4> Mala Cashews</h4>
+            <div class="shop-review-line">
+              <p><img src="images/stars.png" alt="" height="12"> 1 review</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- fan favourites-->
+      <div id="favourites" class="tabcontent">
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/chilli-crab-cashews.png" class="shop-product-img">
+            <h4>  Chilli Crab Cashews </h4>
+            <div class="shop-review-line">
+              <p><img src="images/stars.png" alt="" height="12"> 1 review</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/chilli-crab-cashews.png" class="shop-product-img">
+            <h4> Lotus Biscoff Cashews</h4>
+            <div class="shop-review-line">
+              <p><img src="images/stars.png" alt="" height="12"> 1 review</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/chilli-crab-cashews.png" class="shop-product-img">
+            <h4> Salted Egg and Cheese Cashews</h4>
+            <div class="shop-review-line">
+              <p><img src="images/stars.png" alt="" height="12"> 1 review</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- classics-->
+      <div id="classics" class="tabcontent">
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/chilli-crab-cashews.png" class="shop-product-img">
+            <h4>  Chocolate Cashews </h4>
+            <div class="shop-review-line">
+              <p><img src="images/stars.png" alt="" height="12"> 1 review</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/chilli-crab-cashews.png" class="shop-product-img">
+            <h4> Roasted Cashews</h4>
+            <div class="shop-review-line">
+              <p><img src="images/stars.png" alt="" height="12"> 1 review</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/chilli-crab-cashews.png" class="shop-product-img">
+            <h4> Smoky BBQ Cashews</h4>
+            <div class="shop-review-line">
+              <p><img src="images/stars.png" alt="" height="12"> 1 review</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+      </div>
+
+       <!-- local-->
+       <div id="local" class="tabcontent">
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/chilli-crab-cashews.png" class="shop-product-img">
+            <h4>  Chilli Crab Cashews </h4>
+            <div class="shop-review-line">
+              <p><img src="images/stars.png" alt="" height="12"> 1 review</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/chilli-crab-cashews.png" class="shop-product-img">
+            <h4> Laksa Cashews</h4>
+            <div class="shop-review-line">
+              <p><img src="images/stars.png" alt="" height="12"> 1 review</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/chilli-crab-cashews.png" class="shop-product-img">
+            <h4> Mala Cashews</h4>
+            <div class="shop-review-line">
+              <p><img src="images/stars.png" alt="" height="12"> 1 review</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/chilli-crab-cashews.png" class="shop-product-img">
+            <h4> Salted Egg and Cheese Cashews</h4>
+            <div class="shop-review-line">
+              <p><img src="images/stars.png" alt="" height="12"> 1 review</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- bundles-->
+      <div id="local" class="tabcontent">
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/chilli-crab-cashews.png" class="shop-product-img">
+            <h4>  Bundle A </h4>
+            <div class="shop-review-line">
+              <p><img src="images/stars.png" alt="" height="12"> 1 review</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/chilli-crab-cashews.png" class="shop-product-img">
+            <h4> Bundle B</h4>
+            <div class="shop-review-line">
+              <p><img src="images/stars.png" alt="" height="12"> 1 review</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/chilli-crab-cashews.png" class="shop-product-img">
+            <h4> Bundle C</h4>
+            <div class="shop-review-line">
+              <p><img src="images/stars.png" alt="" height="12"> 1 review</p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+      </div>
+
+      
+
+
+
+    </div>
     
 
   </body>
