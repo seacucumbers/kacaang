@@ -36,8 +36,8 @@ p {
 }
 
 .Kacaang-logo {
-    padding-top: 12px;
-    height: 60px;
+    padding-top: 15px;
+    height: 70px;
 }
 
 body {
@@ -72,21 +72,24 @@ body {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position-x: center;
-    /* display: flex; */
     align-items: center;
     text-align: center;
     z-index: 10;
 }
-  
-.navbar-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 60px 10px 60px;
-    align-items: center;
-    text-align: center;
+
+.nav-link {
+    font-family: 'Comfortaa', sans-serif;
+    letter-spacing: 1px;
+    color: #3A2817;
+    margin: -10px 15px 0px 15px;
 }
 
-.navbar-nav a {
+.nav-spread {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-icon {
     color: #3A2817;
 }
 
