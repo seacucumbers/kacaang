@@ -3,7 +3,6 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
 
 .main-content {
@@ -16,11 +15,30 @@ body {
 .row {
     padding: 0 65px 0 65px;
     width: 100%;
+    margin-left: 0 !important;
+}
+
+.nav-bar {
+    background-color: #EDA23F;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.nav-links {
+    display: inline-block;
+    width: fit-content;
+    text-decoration: none;
+    font-family: 'Comfortaa', sans-serif;
+    color: #2E2012;
+    font-size: 20px;
 }
 
 .main-content-orange {
     background-color: #EDA23F;
     width: 100%;
+    height: 13%;
     margin: 0;
     padding: 0;
 }
@@ -36,7 +54,7 @@ p1 {
     padding-top: 58px;
     font-family: 'Titan One', sans-serif;
     color: #3A2817;
-    font-size: 86px;
+    font-size: 56px;
     text-align: center;
 }
 
@@ -91,7 +109,47 @@ input[type=text] {
     color: white;
     font-family: 'Comfortaa', sans-serif;
     border: none;
-  }
+}
+
+button {
+    font-family: 'Titan One', sans-serif !important;
+    color: #EDA23F !important;
+    font-size: 22px !important;
+    background-color: #CF5B26 !important;
+    border: none !important;
+}
+
+.fa-brands {
+    color: #EDA23F;
+    font-size: 20px;
+    margin-right: 8px;    
+}
+
+.subscribe-icons {
+    color: #CF5B26;
+    font-size: 50px;
+    margin-top: 15px;
+    margin-right: 8px;      
+}
+
+.footer-link {
+    font-family: 'Comfortaa', sans-serif;
+    color: #EDA23F;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    padding-bottom: 16px;
+}
+
+.copyright {
+    text-align: center;
+    font-family: 'Comfortaa', sans-serif;
+    color: #EDA23F;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 50px;
+}
 
 
 
