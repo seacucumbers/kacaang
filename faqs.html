@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>FAQs</title>
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!--css-->
+    <link rel="stylesheet" href="css/yuwen.css">
+
+    <!--favicon-->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <!--fonts used Titan One & Comfortaa-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700&family=Titan+One&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!--AWESOME FONT-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- other language -->
+    <meta charset="utf-8">
+
+    <!-- Media Queries/Viewport -->
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+
+    <!--javascript-->
+    <script src="scripts/faqTabs.js"></script>
+</head>
+
+<body>
+    <div class="page-20-percent">
+        <!-- tab buttons -->
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'product')" id="defaultOpen">Product</button>
+        <button class="tablinks" onclick="openTab(event, 'loyalty')">Loyalty</button>
+        <button class="tablinks" onclick="openTab(event, 'general')">General</button>
+    </div>
+    <!-- tab contents -->
+    <!-- product tab -->
+    <div id="product" class="tabcontent">
+        <div class="accordion accordion-flush" id="accordionQuestions">
+            <!--q1-->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="qnOneQuestion">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#qnOneAnswer" aria-expanded="true" aria-controls="flush-collapseOne">
+                        What are all the available flavours?
+                    </button>
+                </h2>
+                <div id="qnOneAnswer" class="accordion-collapse collapse" aria-labelledby="qnOneQuestion">
+                    <div class="accordion-body">We have Black Pepper, Lotus Biscoff, Smoky BBQ, Chocolate, Roasted,
+                        Chili Crab,
+                        Salted Egg and Cheese, Mala and Laksa.</div>
+                </div>
+            </div>
+            <!--q2-->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="qnTwoQuestion">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#qnTwoAnswer" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        What is the shelf life of the cashew nuts?
+                    </button>
+                </h2>
+                <div id="qnTwoAnswer" class="accordion-collapse collapse" aria-labelledby="qnTwoQuestion">
+                    <div class="accordion-body">It can be kept for 6 months from manufacture date.</div>
+                </div>
+            </div>
+            <!--q3-->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="qnThreeQuestion">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#qnThreeAnswer" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Does the cashew nuts contain any known allergens?
+                    </button>
+                </h2>
+                <div id="qnThreeAnswer" class="accordion-collapse collapse" aria-labelledby="qnThreeQuestion">
+                    <div class="accordion-body">Nut allegy, of course.<br> Black Pepper, Smoky BBQ, Roasted and Mala
+                        does not
+                        contain any potential allergens.
+                        <br> Lotus Biscoff contains soy and gluten. <br> Chili Crab and Laksa contains gluten and
+                        shellfish. <br>
+                        Salted Egg and Cheese contains dairy and gluten.
+                    </div>
+                </div>
+            </div>
+            <!--q4-->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="qnFourQuestion">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#qnFourAnswer" aria-expanded="true" aria-controls="flush-collapseOne">
+                        Are the cashew nuts gluten-free?
+                    </button>
+                </h2>
+                <div id="qnFourAnswer" class="accordion-collapse collapse" aria-labelledby="qnFourQuestion">
+                    <div class="accordion-body">For gluten-free nuts, do purchase only Black Pepper, Smoky BBQ, Roasted
+                        and Mala
+                    </div>
+                </div>
+            </div>
+            <!--q5-->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="qnFiveQuestion">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#qnFiveAnswer" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Are the cashew nuts vegetarian?
+                    </button>
+                </h2>
+                <div id="qnFiveAnswer" class="accordion-collapse collapse" aria-labelledby="qnFiveQuestion">
+                    <div class="accordion-body">For vegetarian options, do purchase only Black Pepper, Lotus Biscoff,
+                        Smoky BBQ,
+                        Roasted and Mala</div>
+                </div>
+            </div>
+            <!--q6-->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="qnSixQuestion">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#qnSixAnswer" aria-expanded="false" aria-controls="flush-collapseThree">
+                        What is the benefits of eating cashew nuts?
+                    </button>
+                </h2>
+                <div id="qnSixAnswer" class="accordion-collapse collapse" aria-labelledby="qnSixQuestion">
+                    <div class="accordion-body">Cashew nuts are a nutrient-rich snack that can contribute to overall
+                        health.
+                        Packed with protein, healthy fats, vitamins, and minerals, they support heart health by
+                        improving
+                        cholesterol levels and may aid in weight management due to their satiating properties.
+                        <br>With a lower glycemic index, cashews can help regulate blood sugar levels.
+                        Additionally, their antioxidant content promotes skin health, and essential minerals like
+                        magnesium and
+                        phosphorus contribute to bone health.
+                        <br>As a plant-based protein source, cashews are particularly beneficial for vegetarians and
+                        vegans.
+                        While enjoying the benefits, it's crucial to consume them in moderation due to their calorie
+                        density.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--additional questions-->
+        <div class="additionalQn">Still have questions? <br> Fill up our <a href="contact-us.html" class="contact-link">contact form</a>
+                and we will get back to you within 2-3 working days!
+        </div>
+    </div>
+    <!-- loyalty tab -->
+    <div id="loyalty" class="tabcontent">
+        <div class="accordion accordion-flush" id="accordionQuestions">
+            <!--q1-->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="qnOneQuestion">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#qnOneAnswer" aria-expanded="true" aria-controls="flush-collapseOne">
+                        How do I become a C&sup3 member? What does it mean?
+                    </button>
+                </h2>
+                <div id="qnOneAnswer" class="accordion-collapse collapse" aria-labelledby="qnOneQuestion">
+                    <div class="accordion-body">If you do not have an account with us previously or you want to create a
+                        new account,
+                        simply click on the "account" icon on our website and you will be redirected to C&sup3
+                        registration.
+                        <br> Being in the C&sup3 entitles you to a reward system and you can redeem vouchers using these
+                        points.
+                    </div>
+                </div>
+            </div>
+            <!--q2-->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="qnTwoQuestion">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#qnTwoAnswer" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        How do I collect points?
+                    </button>
+                </h2>
+                <div id="qnTwoAnswer" class="accordion-collapse collapse" aria-labelledby="qnTwoQuestion">
+                    <div class="accordion-body">Simply make a purchase with us. Every $1 entitles you to 10 points.
+                    </div>
+                </div>
+            </div>
+            <!--q3-->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="qnThreeQuestion">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#qnThreeAnswer" aria-expanded="false" aria-controls="flush-collapseThree">
+                        When will my points expire?
+                    </button>
+                </h2>
+                <div id="qnThreeAnswer" class="accordion-collapse collapse" aria-labelledby="qnThreeQuestion">
+                    <div class="accordion-body">Points are accumulable. The points will expire 1 year from the last day
+                        you purchased with us. </div>
+                </div>
+            </div>
+            <!--q4-->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="qnFourQuestion">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#qnFourAnswer" aria-expanded="true" aria-controls="flush-collapseOne">
+                        How many vouchers can I use per transaction?
+                    </button>
+                </h2>
+                <div id="qnFourAnswer" class="accordion-collapse collapse" aria-labelledby="qnFourQuestion">
+                    <div class="accordion-body">Only one voucher is allowed per transaction.</div>
+                </div>
+            </div>
+            <!--q5-->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="qnFiveQuestion">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#qnFiveAnswer" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        How long will my voucher expire after I claim it?
+                    </button>
+                </h2>
+                <div id="qnFiveAnswer" class="accordion-collapse collapse" aria-labelledby="qnFiveQuestion">
+                    <div class="accordion-body">Vouchers are valid for 1 year from the day you claim it.</div>
+                </div>
+            </div>
+            <!--q6-->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="qnSixQuestion">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#qnSixAnswer" aria-expanded="false" aria-controls="flush-collapseThree">
+                        When will the points be reflected in my account?
+                    </button>
+                </h2>
+                <div id="qnSixAnswer" class="accordion-collapse collapse" aria-labelledby="qnSixQuestion">
+                    <div class="accordion-body">Points will be reflected in your account within 1 hour of payment done.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--additional questions-->
+        <div class="additionalQn">Still have questions? <br> Fill up our <a href="contact-us.html" class="contact-link">contact form</a>
+                and we will get back to you within 2-3 working days!
+        </div>
+    </div>
+    <!-- general tab -->
+    <div id="general" class="tabcontent">
+        <div class="accordion accordion-flush" id="accordionQuestions">
+            <!--q1-->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="qnOneQuestion">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#qnOneAnswer" aria-expanded="true" aria-controls="flush-collapseOne">
+                        Do you provide gift wrapping services?
+                    </button>
+                </h2>
+                <div id="qnOneAnswer" class="accordion-collapse collapse" aria-labelledby="qnOneQuestion">
+                    <div class="accordion-body">Yes we do. We also provide bundle packs. Do contact us if you require
+                        such service using our <a href="contact-us.html" class="contact-link">contact form</a>.</div>
+                </div>
+            </div>
+            <!--q2-->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="qnTwoQuestion">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#qnTwoAnswer" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Is it cheaper for bulk order?
+                    </button>
+                </h2>
+                <div id="qnTwoAnswer" class="accordion-collapse collapse" aria-labelledby="qnTwoQuestion">
+                    <div class="accordion-body">Yes definitely. We do provide bundle packs which are cheaper. If you
+                        require more, do contact us via our <a href="contact-us.html" class="contact-link">contact
+                            form</a>.</div>
+                </div>
+            </div>
+            <!--q3-->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="qnThreeQuestion">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#qnThreeAnswer" aria-expanded="false" aria-controls="flush-collapseThree">
+                        What are the payment modes available?
+                    </button>
+                </h2>
+                <div id="qnThreeAnswer" class="accordion-collapse collapse" aria-labelledby="qnThreeQuestion">
+                    <div class="accordion-body">We accept Visa, Mastercard, PayNow, Paylah!, and AMEX.</div>
+                </div>
+            </div>
+            <!--q4-->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="qnFourQuestion">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#qnFourAnswer" aria-expanded="true" aria-controls="flush-collapseOne">
+                        Is there a subscription plan if I wish to buy on a monthly basis?
+                    </button>
+                </h2>
+                <div id="qnFourAnswer" class="accordion-collapse collapse" aria-labelledby="qnFourQuestion">
+                    <div class="accordion-body">Yes. Do contact us via out <a href="contact-us.html"
+                            class="contact-link">contact form</a> so we can give you the price of the subscription based
+                        on your needs.</div>
+                </div>
+            </div>
+            <!--q5-->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="qnFiveQuestion">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#qnFiveAnswer" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        How long is the delivery?
+                    </button>
+                </h2>
+                <div id="qnFiveAnswer" class="accordion-collapse collapse" aria-labelledby="qnFiveQuestion">
+                    <div class="accordion-body">We will get your cashew nuts delivered within 3-5 working days after you
+                        have placed your orders.</div>
+                </div>
+            </div>
+            <!--q6-->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="qnSixQuestion">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#qnSixAnswer" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Do you provide free samples?
+                    </button>
+                </h2>
+                <div id="qnSixAnswer" class="accordion-collapse collapse" aria-labelledby="qnSixQuestion">
+                    <div class="accordion-body">Yes, we provide free samples for first-time purchase. Alternatively, you
+                        can find us at our <a href="farm.html" class="contact-link">farm</a> to take a look at our farm
+                        and try the cashew nuts fresh.</div>
+                </div>
+            </div>
+        </div>
+        <!--additional questions-->
+        <div class="additionalQn"> Still have questions? <br> Fill up our <a href="contact-us.html" class="contact-link">contact form</a>
+                and we will get back to you within 2-3 working days!
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
