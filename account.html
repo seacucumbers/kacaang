@@ -1,1 +1,178 @@
-<html></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Account</title>
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!--css-->
+    <link rel="stylesheet" href="css/yuwen.css">
+
+    <!--favicon-->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <!--fonts used Titan One & Comfortaa-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700&family=Titan+One&display=swap"
+        rel="stylesheet">
+
+    <!--AWESOME FONT-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- other language -->
+    <meta charset="utf-8">
+
+    <!-- Media Queries/Viewport -->
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+
+    <!--javascript-->
+    <script src="scripts/accountTabs.js"></script>
+
+</head>
+
+<body>
+    <div class="page-20-percent">
+        <!--navbar-->
+
+        <!--banner-->
+        <div class="main-container">
+            <div id="bannertext">account</div>
+        </div>
+        <!--end banner-->
+
+        <!--content-->
+        <div>
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="accountcontainer">
+                        <img src="images/profile.png">
+                        <div class="flex-column ms-4">
+                            <p class="mb-4">Lica</p>
+                            <p class="mb-4 p-color">licaloveskacaang@email.com</p>
+                            <p class="mb-4 p-24px">
+                                <span class="p-36px">150</span>
+                                <img src="images/membership.png">
+                                Points
+                            </p>
+                            <p class="mb-0 p-color">Referral code: KAC928HB28</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex align-items-end justify-content-end">
+                    <div class="accountcontainer">
+                        <i class="fa-regular fa-circle-user"></i>
+                        <p class="p-12px-bottom"><u>Log Out</u></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="tabacct">
+                <button class="tablinks" onclick="openTab(event, 'profile')" id="defaultOpen">Profile</button>
+                <button class="tablinks" onclick="openTab(event, 'pastorders')">Past Orders</button>
+                <button class="tablinks" onclick="openTab(event, 'rewards')">Rewards</button>
+                <button class="tablinks" onclick="openTab(event, 'pointshistory')">Points History</button>
+            </div>
+            <!-- tab contents -->
+            <!-- profile tab -->
+            <div id="profile" class="tabacctcontent">
+                <div class="acctrect-left">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="p-20-px-color-orange">NAME</p>
+                            <p class="p-color-orange">Lica</p>
+                            <p class="p-20-px-color-orange">EMAIL</p>
+                            <p class="p-color-orange">licaloveskacaang@email.com</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="p-20-px-color-orange">ADDRESS</p>
+                            <p class="p-color-orange">
+                                BLK 655 BUKIT PANJANG RING ROAD<br>
+                                #14-76<br>
+                                SINGAPORE 687655<br>
+                                SINGAPORE
+                            </p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button class="actionbutton">Edit</button>
+                        </div>
+                        <div class="col-md-6">
+                            <button class="actionbutton">View other addresses</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- past orders tab -->
+            <div id="pastorders" class="tabacctcontent">
+                <div class="acctrect">
+                    <p class="p-20-px-color-orange">You haven't placed any orders yet.</p> <br>
+                    <button class="actionbutton"><a href="shop.html" class="contact-link-no-underline">Shop
+                            Now</a></button>
+                </div>
+            </div>
+            <!-- rewards tab -->
+            <div id="rewards" class="tabacctcontent">
+                <div class="acctrect">
+                    <div class="row">
+                        <div class="col-md-3 aligncenter">
+                            <img class="imgacct" src="images/chilli-crab-cashews.png">
+                            <p class="p-color-orange">Free Delivery</p>
+                            <p class="p-12-px-color-orange">150 points</p>
+                            <button class="actionbutton-neutral">Redeem</button>
+                        </div>
+                        <div class="col-md-3 aligncenter">
+                            <img class="imgacct" src="images/chilli-crab-cashews.png">
+                            <p class="p-color-orange">$2 OFF next order</p>
+                            <p class="p-12-px-color-orange">350 points</p>
+                            <button class="actionbutton-smaller">More points needed</button>
+                        </div>
+                        <div class="col-md-3 aligncenter">
+                            <img class="imgacct" src="images/chilli-crab-cashews.png">
+                            <p class="p-color-orange">$5 OFF next order</p>
+                            <p class="p-12-px-color-orange">600 points</p>
+                            <button class="actionbutton-smaller">More points needed</button>
+                        </div>
+                        <div class="col-md-3 aligncenter">
+                            <img class="imgacct" src="images/chilli-crab-cashews.png">
+                            <p class="p-color-orange">$10 OFF next order</p>
+                            <p class="p-12-px-color-orange">1000 points</p>
+                            <button class="actionbutton-smaller">More points needed</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- points history tab -->
+            <div id="pointshistory" class="tabacctcontent">
+                <div class="acctrect-right">
+                    <p class="p-20-px-color-orange">November 2023</p> <br>
+                    <button class="actionbutton-100-orange">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>Welcome Points!</p>
+                                <p class="p-12px">11 November 2023</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="alignright">+150</p>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+            <!--footer-->
+        </div>
+</body>
+
+</html>
