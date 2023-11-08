@@ -406,7 +406,15 @@ textarea {
     font-family: 'Comfortaa', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    margin: 0;
+    margin-bottom: 0;
+}
+
+.p-color-orange-margin-bottom {
+    color: #EDA23F;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 24px;
 }
 
 .p-20-px-color-orange {
