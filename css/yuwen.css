@@ -161,6 +161,7 @@ p {
     padding: 8px 15px;
     margin-top: 20px;
     font-family: 'Titan One';
+    font-size: 22px;
     color: #3A2817;
     border: 2px solid #3A2817;
     box-shadow: 2px 2px 1px #B0824D;
@@ -407,6 +408,11 @@ textarea {
     font-size: 20px;
     margin-right: 10px;
     color: #3A2817;
+}
+
+.accountcontainer h3 {
+    font-family: 'Comfortaa', sans-serif;
+    letter-spacing: 1px;
 }
 
 .p-color {
