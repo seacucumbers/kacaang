@@ -52,10 +52,6 @@ p {
     color: #B0824D;
 }
 
-.dark-brown-font {
-    color: #3A2817;
-}
-
 .page-20-percent h1 {
     text-align: center;
 }
@@ -379,9 +375,7 @@ textarea {
 }
 
 .accountcontainer h6,
-.acctrect h5,
 .acctrect h6,
-.acctrect-left h5,
 .acctrect-left h6{
     color: #3A2817;
     line-height: 30px;
@@ -408,7 +402,7 @@ textarea {
     background-color: #EDA23F;
     width: 100%;
     height: auto;
-    padding: 20px;
+    padding: 30px;
     border-radius: 8px;
     border-top-right-radius: 0;
 }
@@ -419,7 +413,8 @@ textarea {
     text-align: left;
 }
 
-.reedemable .actionbutton {
+.acctrect-left .actionbutton,
+.acctrect .actionbutton{
     padding: 8px 12px;
     font-size: 14px;
 }
@@ -429,12 +424,24 @@ textarea {
     padding-top: 10px;
 }
 
+.reedemable .actionbutton {
+    padding: 8px 0;
+    font-size: 14px;
+    width: 100%;
+    border: 2px solid #CF5B26;
+}
+
 .unreedemable .actionbutton {
-    padding: 8px 12px;
+    padding: 8px 0px;
     font-size: 14px;
     color: #3A2817;
     border: 2px solid #3A2817;
     background-color: transparent;
+    width: 100%;
+}
+
+.acctrect-right .row {
+    border-bottom: 2px solid #3A2817;
 }
 
 .imgacct {
