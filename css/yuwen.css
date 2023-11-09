@@ -47,6 +47,15 @@ p {
 }
 /*end standardised*/
 
+/*others*/
+.light-brown-font {
+    color: #B0824D;
+}
+
+.dark-brown-font {
+    color: #3A2817;
+}
+
 .page-20-percent h1 {
     text-align: center;
 }
@@ -54,6 +63,30 @@ p {
 .page-10-percent h1 {
     text-align: center;
 }
+
+.alignright {
+    text-align: right;
+}
+
+.alignrightpadding {
+    text-align: right;
+    padding-right: 4%;
+}
+
+.aligncenter {
+    text-align: center;
+}
+
+.actionbutton {
+    padding: 12px 16px;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 400;
+    background-color: #CF5B26;
+    color: #ECE9D5;
+    border-radius: 8px;
+    border: none;
+}
+/*end others*/
 
 /*questions*/
 .accordion {
@@ -188,6 +221,7 @@ p {
 .tabacct {
     display: flex;
     justify-content: space-between;
+    padding-top: 42px;
 }
 
 .tabacct button {
@@ -275,13 +309,6 @@ tr:last-child td:last-child {
 /*end table*/
 
 /*cart styles*/
-p {
-    color: #3A2817;
-    font-family: 'Comfortaa', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    margin: 0;
-}
 
 .p-36px {
     color: #3A2817;
@@ -322,70 +349,6 @@ p {
     padding-top: 12px;
 }
 
-.actionbutton-100-orange {
-    padding: 12px 16px;
-    width: 100%;
-    background-color: #EDA23F;
-    color: #3A2817;
-    border-radius: 8px;
-    border: none;
-    text-align: left;
-}
-
-.actionbutton-100 {
-    padding: 12px 16px;
-    width: 100%;
-    background-color: #CF5B26;
-    color: #ECE9D5;
-    border-radius: 8px;
-    border: none;
-}
-
-.actionbutton {
-    padding: 12px 16px;
-    font-family: 'Comfortaa', sans-serif;
-    font-weight: 400;
-    background-color: #CF5B26;
-    color: #ECE9D5;
-    border-radius: 8px;
-    border: none;
-}
-
-.actionbutton-neutral {
-    padding: 8px 0;
-    width: 100%;
-    font-family: 'Comfortaa', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    background-color: transparent;
-    color: #ECE9D5;
-    border-radius: 8px;
-    border: 2px solid #ECE9D5;
-    text-align: center;
-}
-
-.actionbutton-smaller {
-    padding: 8px 0;
-    width: 100%;
-    font-family: 'Comfortaa', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    background-color: #CF5B26;
-    color: #ECE9D5;
-    border-radius: 8px;
-    border: none;
-    text-align: center;
-}
-
-.alignright {
-    text-align: right;
-}
-
-.alignrightpadding {
-    text-align: right;
-    padding-right: 4%;
-}
-
 textarea {
     min-height: 150px;
     width: 100%;
@@ -415,47 +378,17 @@ textarea {
     letter-spacing: 1px;
 }
 
-.p-color {
-    color: #B0824D;
-    font-family: 'Comfortaa', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-}
-
-.p-color-orange {
-    color: #EDA23F;
-    font-family: 'Comfortaa', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    margin-bottom: 0;
-}
-
-.p-color-orange-margin-bottom {
-    color: #EDA23F;
-    font-family: 'Comfortaa', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    margin-bottom: 24px;
-}
-
-.p-20-px-color-orange {
-    color: #EDA23F;
-    font-family: 'Comfortaa', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    margin-bottom: 5px;
-}
-
-.p-12-px-color-orange {
-    color: #EDA23F;
-    font-family: 'Comfortaa', sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    margin-bottom: 5px;
+.accountcontainer h6,
+.acctrect h5,
+.acctrect h6,
+.acctrect-left h5,
+.acctrect-left h6{
+    color: #3A2817;
+    line-height: 30px;
 }
 
 .acctrect-left {
-    background-color: #3A2817;
+    background-color: #EDA23F;
     width: 100%;
     height: auto;
     padding: 20px;
@@ -464,7 +397,7 @@ textarea {
 }
 
 .acctrect {
-    background-color: #3A2817;
+    background-color: #EDA23F;
     width: 100%;
     height: auto;
     padding: 20px;
@@ -472,7 +405,7 @@ textarea {
 }
 
 .acctrect-right {
-    background-color: #3A2817;
+    background-color: #EDA23F;
     width: 100%;
     height: auto;
     padding: 20px;
@@ -480,11 +413,32 @@ textarea {
     border-top-right-radius: 0;
 }
 
+.acctrect-right .actionbutton {
+    width: 100%;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.reedemable .actionbutton {
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+.reedemable h6
+.unreedemable h6 {
+    padding-top: 10px;
+}
+
+.unreedemable .actionbutton {
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #3A2817;
+    border: 2px solid #3A2817;
+    background-color: transparent;
+}
+
 .imgacct {
     width: 100%;
     padding: 5px 0;
 }
-
-.aligncenter {
-    text-align: center;
-}
+/*end acct*/
