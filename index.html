@@ -7,11 +7,11 @@
     <title>Home - Kacaang</title>
 
     <!--Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">    
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
@@ -21,6 +21,9 @@
 
     <!-- stylesheet -->
     <link rel="stylesheet" href="css/index.css">
+
+    <!-- javascript -->
+    <script src="scripts/index.js"></script>
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,50 +52,30 @@
         </div>
 
         <!-- navbar -->
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse nav-spread" id="navbarNavDarkDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">ABOUT US</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <button class="btn dropdown-toggle nav-link" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                SHOP
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item nav-link" href="#">ALL PRODUCTS</a></li>
-                                <li><a class="dropdown-item nav-link" href="#">ON SALE</a></li>
-                                <li><a class="dropdown-item nav-link" href="#">CORPORATE/OCCASION</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">LOCATE US</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">CONTACT US</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">FAQS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">REVIEWS</a>
-                        </li>
-                    </ul>
-                    <div class="nav-icons-list nav-link">
-                        <a class="nav-icon"><img src="images/account.svg" alt="Account Icon"></a>
-                        <a class="nav-icon"><img src="images/cart.svg" alt="Account Icon"></a>
+        <nav>
+            <div class="navbar" id="top-navbar">
+                <a class="navlink" href="#home" class="active">ABOUT US</a>
+                <div class="dropdown">
+                    <button class="dropbtn">SHOP
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">ALL PRODUCTS</a>
+                        <a href="#">ON SALE</a>
+                        <a href="#">BULK ORDERS</a>
                     </div>
                 </div>
+                <a class="navlink" href="#news">LOCATE US</a>
+                <a class="navlink" href="#about">CONTACT US</a>
+                <a class="navlink" href="#about">FAQS</a>
+                <a class="navlink" href="#about">REVIEWS</a>
+                <div class="navbar-icons">
+                    <a class="nav-icon"><img src="images/account.svg" alt="Account Icon"></a>
+                    <a class="nav-icon"><img src="images/cart.svg" alt="Account Icon"></a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="images/burger.svg"></a>
             </div>
         </nav>
-
     </header>
 
     <!-- footer -->
