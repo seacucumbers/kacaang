@@ -5,6 +5,7 @@ body {
     overflow-x: hidden;
 }
 
+/*standardised*/
 .page-10-percent {
     padding: 20px 10%;
 }
@@ -13,17 +14,46 @@ body {
     padding: 20px 20%;
 }
 
-/*banner*/
-#bannertext {
+h1 {
     font-family: 'Titan One', sans-serif;
-    color: #3A2817;
     font-size: 56px;
-    padding-bottom: 60px;
     letter-spacing: 1px;
+    color: #3A2817;
+}
+
+h3 {
+    font-family: 'Titan One', sans-serif;
+    font-size: 38px;
+    letter-spacing: 1px;
+    color: #3A2817;
+}
+
+h5 {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+h6 {
+    font-family: 'Comfortaa', sans-serif;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+p {
+    font-family: 'Comfortaa', sans-serif;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+/*end standardised*/
+
+.page-20-percent h1 {
     text-align: center;
 }
 
-/*end banner*/
+.page-10-percent h1 {
+    text-align: center;
+}
 
 /*questions*/
 .accordion {
@@ -33,32 +63,29 @@ body {
     border: none;
     outline: none;
     transition: 0.4s;
-    background-color: transparent;
     padding-bottom: 60px;
 }
 
 .accordion .accordion-item {
-    padding: 44px 0;
+    padding: 42px 0;
     position: relative;
-    background-color: #ECE9D5;
+    background-color: transparent;
 }
 
 .accordion .accordion-item:after {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 0;
     width: 100%;
     height: 3px;
-    background-color: #B0824D;
+    background-color: #3A2817;
 }
 
-.accordion-button:not(.collapsed) {
-    color: #B0824B;
+/* .accordion-button:not(.collapsed) {
     border: none;
     border-color: transparent;
     background-color: transparent;
-}
+} */
 
 .accordion-button:link,
 .accordion-button:visited,
@@ -66,7 +93,6 @@ body {
 .accordion-button:active,
 .accordion-button:focus {
     background-color: transparent;
-    color: #B0824D;
     text-decoration: none;
     border: none;
     border-color: transparent;
@@ -74,14 +100,9 @@ body {
 }
 
 .accordion .accordion-button {
-    color: #B0824D;
-    font-family: 'Comfortaa', sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    letter-spacing: 1px;
-    padding: 0 48px 0 0;
-    border: none;
-    background-color: #ECE9D5;
+    color: #3A2817;
+    padding: 20px 48px 0 0;;
+    background-color: transparent;
 }
 
 .accordion-button::after {
@@ -89,26 +110,20 @@ body {
 }
 
 .accordion-button.collapsed::before {
-    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' height='36' viewBox='0 0 24 24' width='36' stroke='%23B0824D'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E");
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' height='36' viewBox='0 0 24 24' width='36' stroke='%233A2817'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E");
     position: absolute;
     right: 5px;
-    transition: transform 0.3s ease;
 }
 
 .accordion-button:not(.collapsed)::before {
-    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' height='36' viewBox='0 0 24 24' width='36' stroke='%23B0824D'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 15l7-7 7 7'/%3E%3C/svg%3E");
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' height='36' viewBox='0 0 24 24' width='36' stroke='%233A2817'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 15l7-7 7 7'/%3E%3C/svg%3E");
     position: absolute;
     right: 5px;
-    transition: transform 0.3s ease;
 }
 
 .accordion .accordion-body {
-    color: #B0824D;
-    font-family: 'Comfortaa', sans-serif;
-    font-weight: 700;
-    font-size: 16px;
+    color: #3A2817;
     padding: 20px 48px 0 0;
-    letter-spacing: 1px;
     border: none;
 }
 
@@ -117,13 +132,12 @@ body {
 /*additional questions*/
 .additionalQn {
     padding-bottom: 60px;
-    color: #B0824D;
-    font-family: 'Comfortaa', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    letter-spacing: 1px;
+    color: #3A2817;
 }
 
+/*end additional questions*/
+
+/*link/refs*/
 .contact-link {
     text-decoration: underline;
     color: inherit;
@@ -134,7 +148,7 @@ body {
     color: inherit;
 }
 
-/*end additional questions*/
+/*end link/refs*/
 
 /*tab*/
 .tab {
@@ -147,7 +161,6 @@ body {
     padding: 8px 15px;
     margin-top: 20px;
     font-family: 'Titan One';
-    font-size: 20px;
     color: #3A2817;
     border: 2px solid #3A2817;
     box-shadow: 2px 2px 1px #B0824D;
@@ -190,7 +203,6 @@ body {
 
 .tabacct button:hover {
     background-color: #EDA23F;
-    box-shadow: 2px 2px 1px #3A2817;
 }
 
 .tabacct button.active {
@@ -205,6 +217,7 @@ body {
     display: block;
     height: 300px;
 }
+
 /*end tab*/
 
 /*table*/
@@ -338,22 +351,24 @@ p {
 }
 
 .actionbutton-neutral {
-    padding: 8px 12px;
+    padding: 8px 0;
+    width: 100%;
     font-family: 'Comfortaa', sans-serif;
     font-weight: 400;
-    font-size:12px;
-    background-color: #ECE9D5;
-    color: #3A2817;
+    font-size: 14px;
+    background-color: transparent;
+    color: #ECE9D5;
     border-radius: 8px;
-    border: none;
+    border: 2px solid #ECE9D5;
     text-align: center;
 }
 
 .actionbutton-smaller {
-    padding: 8px 12px;
+    padding: 8px 0;
+    width: 100%;
     font-family: 'Comfortaa', sans-serif;
     font-weight: 400;
-    font-size:12px;
+    font-size: 14px;
     background-color: #CF5B26;
     color: #ECE9D5;
     border-radius: 8px;
