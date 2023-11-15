@@ -133,6 +133,11 @@ h1 {
   height: auto;
 }
 
+.Kacaang-logo {
+  width: 50%;
+  height: auto;
+}
+
 .mobile-footer {
   display: none;
   visibility: hidden;
@@ -226,7 +231,11 @@ h1 {
 }
 .shop-product-img {
     height: 250px;
-    padding-bottom: 15px;
+    /* padding-bottom: 15px; */
+    border-radius: 10px;
+}
+.shop-content h5 {
+  padding-top: 15px;
 }
 .shop-content h4 {
     padding-bottom: 5px;
@@ -464,11 +473,21 @@ h1 {
   width: 100%;
   border-radius: 12px 0 0 12px;
 }
+
 .review-template-text {
   background-color: #3A2817;
   border-radius: 0 12px 12px 0 ;
   padding: 56px 6%;
 }
+@media only screen and (max-width:720px) {
+  .review-template-img img {
+    border-radius: 12px 12px 0 0;
+  }
+  .review-template-text {
+    border-radius: 0 0 12px 12px ;
+  }
+  }
+
 .review-text-content img {
   height: 20px;
 }
@@ -506,6 +525,61 @@ h1 {
 }
 .reviews-features h4 {
   font-family: 'Titan One', sans-serif;
+}
+
+/* find us page */
+.find-us-page {
+  text-align: center;
+}
+.find-us-page h1 {
+  padding-bottom: 56px;
+}
+.find-us-popups {
+  text-align: center;
+}
+.popup-tag-div {
+  display: flex;
+  justify-content: center;
+  /* position: absolute; */
+}
+.popup-tag {
+  background-color:#CF5B26;
+  width: 55%;
+  border-radius: 8px;
+  /* padding-left: 40px; */
+  z-index: 5;
+}
+.popup-tag h5{
+  font-family: 'Titan One', sans-serif;
+  color: #ECE9D5;
+  padding: 3px 0;
+  margin-bottom: 0;
+}
+
+.find-us-popups-img {
+  max-width: 100%;
+  border-radius: 12px;
+  position: relative;
+}
+.find-us-popups h3 {
+  padding: 18px 0;
+}
+.find-us-popups-location, .find-us-popups-date {
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+}
+.find-us-popups-location img {
+  max-height: 18px;
+}
+.find-us-popups-location h6 {
+  padding-left: 3%;
+}
+.find-us-popups-date img {
+  max-height: 18px;
+}
+.find-us-popups-date h6 {
+  padding-left: 3%;
 }
 
 
