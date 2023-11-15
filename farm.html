@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Farm - KACAANG</title>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Titan+One&display=swap" rel="stylesheet">
+    <!-- FONT AWESOME !-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap css !-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/farm.css">
+</head>
+<body>
+    <!--header-->
+    <div class="our-farm">
+        <div class="row-10">
+            <p1>Our Farm</p1> <br>
+            <p2 style="text-align: center;"><b>Sign up for our exciting Farm Tour for a memorable farm-to-table experience</b></p2>
+            <div class="sign-up">
+                <a href="#farm-tour" class="button">Sign Up Now</a>
+            </div>
+        </div>
+    </div>
+    <!--Achieving the perfect cashews-->
+    <div class="processes">
+        <div class="row-10">
+            <div class="heading">
+                <p5>How we achieve the Perfect Cashews</p5> <br>
+            </div>
+            <img class="nuts" src="images/nuts.png">
+            <!-- <div class="line"></div> -->
+            <div class="row">
+                <div class="info col-md-6 offset-md-5">
+                    <p3>Step 1</p3> <br>
+                    <p6>Hand pick the best quality cashews from our farm.</p6>
+                    <div class="illustration">
+                        <img class="info-images" src="images/raw-cashews.png"> 
+                    </div> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="info col-md-6 offset-md-3">
+                    <p3>Step 2</p3> <br>
+                    <p6>Dry cashews in the sunlight for a few days before roasting.</p6>
+                    <!-- <img class="info-images" src="images/raw-cashews.png"> -->   
+                </div>
+            </div>
+            <div class="row">
+                <div class="info col-md-6 offset-md-5">
+                    <p3>Step 3</p3> <br>
+                    <p6>Remove the outer and inner shell by cutting and peeling.</p6>
+                    <!-- <img class="info-images" src="images/raw-cashews.png"> -->   
+                </div>
+            </div>
+            <div class="row">
+                <div class="info col-md-6 offset-md-3">
+                    <p3>Step 4</p3> <br>
+                    <p6>Cashews are tossed and coated with our homemade flavourings.</p6>
+                    <!-- <img class="info-images" src="images/raw-cashews.png"> -->   
+                </div>
+            </div>
+        </div>
+        <img class="nuts" src="images/nuts.png">   
+        <img src="images/nuts-banner.png" style="padding-top: 24px;">   
+    </div>
+    <!--Virtual Farm Tour--> 
+    <div class="virtual-tour">
+        <div class="row-10">
+            <div class="heading">
+                <p3>Virtual Tour</p3>
+            </div>
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <iframe width=100% height=417px src="https://www.youtube.com/embed/36Vn7LJJt_I">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--farm form-->
+    <div id="farm-tour">
+        <div class="row-10">
+            <div class="heading">
+                <p5>Cashew Farm Tour</p5>
+            </div>
+            <div class="order-form">
+                <div class="row justify-content-around">
+                    <div class="col-md-4">
+                        <div class="input-item">
+                            <label for="full-name">Name<span class="required">*</span></label>
+                            <input type="text" id="fname" name="fname" placeholder="Full Name">
+                        </div>
+                        <div class="input-item">
+                            <label for="email">Email<span class="required">*</span></label>
+                            <input type="text" id="email" name="email" placeholder="Email">
+                        </div>
+                        <div class="input-item">
+                            <label for="phone">Phone Number<span class="required">*</span></label>
+                            <input type="text" id="phone" name="phone" placeholder="Phone Number">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="input-item">
+                            <label for="numOfPax">No. of Pax<span class="required">*</span></label>
+                            <input type="number" id="numOfPax" min="1">
+                        </div>
+                        <div class="input-item">
+                            <label for="date">Date of Tour:<span class="required">*</span></label>
+                            <input type="date" id="date" name="date">
+                        </div>
+                        <div class="input-item">
+                            <label for="time">Select a time:<span class="required">*</span></label>
+                            <input type="time" id="time" name="time">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <div>
+                            <label for="message">Special requests/ Other remarks:<span class="required">*</span></label>
+                            <textarea rows="5" name="message" placeholder="Message"></textarea>
+                            <div class="farm-button">
+                                <a href="#farm-tour" class="button">Sign Up Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Getting there-->
+    <div class="row-10">
+        <div class="getting-there">
+            <div class="heading-getting-there">
+                <p3>Getting Here</p3>
+            </div>
+            <div class="row getting-there-row">
+                <div class="col-md-4 address-contact">
+                    <h2>Address</h2> <br>
+                    <p8><b>Kok Fah Technology Farm Pte Ltd, <br> Singapore 698974</b></p8> <br>
+                    <p8>Mon to Fri</p8> <br>
+                    <p8>09:00 am to 05:00 pm</p8> <br><br> 
+                    <h2>Contact Us</h2> <br>
+                    <p8><b>Telephone</b></p8> <br>
+                    <p8>+65 8186 0985</p8> <br>
+                    <p8><b>Email</b></p8> <br>
+                    <p8>enquiries@kacaang.sg</p8> <br>
+                </div>
+                <div class="google-map col-md-8">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15954.55110078552!2d103.7279903!3d1.3938405!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da0e02be68d759%3A0x799b814bc1705977!2sKok%20Fah%20Technology%20Farm%20Pte%20Ltd!5e0!3m2!1sen!2ssg!4v1699497422699!5m2!1sen!2ssg" style="border:0; width: 95%; height: 95%; padding-top: 6%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--web Subscription-->
+    <div class="web-subscription">
+        <div class="row-subscription">
+            <div class="row">
+                <div class="col-md-5" style="padding-top: 55px">
+                    <p5>Got the case of the munchies?</p5> <br><br>
+                    <p5>Kacaang's &nbsp;</p5>
+                    <p6 style="color: #C33527; font-family: 'Titan One', sans-serif; font-size: 38px;">CASHEW</p6>
+                    <div class="subscribe-icons">
+                        <a href="#"><i class="subscribe-icons fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="subscribe-icons fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="subscribe-icons fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="subscribe-icons fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-5 offset-md-2" style="padding-top: 15.5%; padding-bottom: 5%;">
+                    <p7 style="color: #C33527; font-family: 'Comfortaa', sans-serif; font-size: 20px;"><b>JOIN THE CASHEW CRAZE CLUB TO STAY UPDATED ABOUT OUR EVENTS AND GET SPECIAL DISCOUNTS!</b></p7>
+                    <div class="input-group mb-3" style="margin-top: 38px;">
+                        <input type="text" class="form-control" placeholder="YOUR EMAIL" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">JOIN</button>
+                    </div>      
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--mobile Subscription-->
+    <div class="mobile-subscription">
+        <div class="row-subscription">
+            <div class="row">
+                <div class="col-md-5" style="padding-top: 55px">
+                    <p5>Got the case of the munchies?</p5> <br><br>
+                    <p5>Kacaang's &nbsp;</p5>
+                    <p6 style="color: #C33527; font-family: 'Titan One', sans-serif; font-size: 38px;">CASHEW</p6>
+                    <div class="subscribe-icons">
+                        <a href="#"><i class="subscribe-icons fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="subscribe-icons fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="subscribe-icons fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="subscribe-icons fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-5 offset-md-2" style="padding-top: 15.5%; padding-bottom: 5%;">
+                    <p7 style="color: #C33527; font-family: 'Comfortaa', sans-serif; font-size: 20px;"><b>JOIN THE CASHEW CRAZE CLUB TO STAY UPDATED ABOUT OUR EVENTS AND GET SPECIAL DISCOUNTS!</b></p7>
+                    <div class="input-group mb-3" style="margin-top: 38px;">
+                        <input type="text" class="form-control" placeholder="YOUR EMAIL" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">JOIN</button>
+                    </div>      
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--web footer-->
+    <div class="web-footer">
+        <div class="row-footer">
+            <div class="row">
+                <div class="col-md-2">
+                    <a href="index.html"><img class="Kacaang-logo" src="images/logo.png"></a>
+                </div>
+                <div class="col-md-2 offset-md-1">
+                    <a class="footer-link" href="shop.html">SHOP</a> <br>
+                    <a class="footer-link" href="shop.html">SALES</a> <br>
+                    <a class="footer-link" href="corporate.html">OCCASIONS</a> <br>
+                    <a class="footer-link" href="corporate.html">CORPORATE</a> <br>
+                    <a class="footer-link" href="faqs.html">FAQS</a>
+                </div>
+                <div class="col-md-3 offset-md-1">
+                    <a class="footer-link" href="about-us.html">OUR STORY</a> <br>
+                    <a class="footer-link" href="farm.html">OUR FARM</a> <br>
+                    <a class="footer-link" href="#">CASHEW CRAZE CLUB</a> <br>
+                    <a class="footer-link" href="contact-us.html">CONTACT US</a> <br>
+                    <div class="icons">
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <a class="footer-link" href="#">PRIVACY POLICY</a> <br>
+                    <a class="footer-link" href="#">TERMS AND CONDITIONS</a> <br>
+                </div>
+            </div>
+            <div class="copyright">
+                <p class="copyright">COPYRIGHT &copy; 2023 KACAANG. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+        <img src="images/nuts-banner.png" style="width: 100%;">
+    </div>
+    <!--mobile footer-->
+    <div class="mobile-footer">
+        <div class="row-footer">
+            <a href="index.html"><img class="Kacaang-logo" src="images/logo.png">
+            <div class="mobile-footer-links">
+                <a class="mobile-footer-links" href="shop.html">SHOP</a> <br>
+                <a class="mobile-footer-links" href="shop.html">PROMOTIONS</a> <br>
+                <a class="mobile-footer-links" href="corporate.html">OCCASIONS</a> <br>
+                <a class="mobile-footer-links" href="corporate.html">CORPORATE</a> <br>
+                <a class="mobile-footer-links" href="faqs.html">FAQS</a> <br>
+                <a class="mobile-footer-links" href="about-us.html">OUR STORY</a> <br>
+                <a class="mobile-footer-links" href="farm.html">OUR FARM</a> <br>
+                <a class="mobile-footer-links" href="#">CASHEW CRAZE CLUB</a> <br>
+                <a class="mobile-footer-links" href="contact-us.html">CONTACT US</a> <br>
+                <div class="icons">
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="privacy-tandc">
+                <a class="mobile-footer-links" href="#">PRIVACY POLICY &nbsp;</a>
+                <p style="font-family: 'Comfortaa', sans-serif;
+                color: #EDA23F;
+                font-size: 14px;
+                font-weight: bold;">|</p>
+                <a class="mobile-footer-links" href="#">TERMS AND CONDITIONS</a> <br>
+            </div>
+            <div class="copyright">
+                <p class="copyright">COPYRIGHT &copy; 2023 KACAANG. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+        <img src="images/nuts-banner.png" style="width: 100%;">
+    </div>
+
+</body>
+</html>
