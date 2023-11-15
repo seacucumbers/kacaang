@@ -32,6 +32,11 @@ h1 {
   letter-spacing: 1px;
   color:#3A2817;
   }
+  h4 {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 28px;
+    letter-spacing: 1px;
+    }
   
   h5 {
   font-family: 'Comfortaa', sans-serif;
@@ -51,11 +56,101 @@ h1 {
   font-size: 14px;
   }
 .page-10-percent {
-    padding: 56px 10% 120px;
+    padding: 56px 10% 100px;
 }
 .page-20-percent {
   padding: 56px 20% 120px;
 }
+
+/*web footer*/
+.web-footer {
+  background-color: #3A2817;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.row-footer {
+  padding: 50px 10% 10px 10%;
+  width: 100%;
+  margin-left: 0 !important;
+}
+
+.footer-link {
+  font-family: 'Comfortaa', sans-serif;
+  line-height: 1.5;
+  color: #EDA23F;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  padding-bottom: 16px;
+}
+.fa-brands {
+  color: #EDA23F;
+  font-size: 20px;
+  margin-right: 8px;    
+}
+
+.copyright {
+  text-align: center;
+  font-family: 'Comfortaa', sans-serif;
+  color: #EDA23F;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 5%;
+}
+
+/*mobile footer*/
+.mobile-footer {
+  background-color: #3A2817;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.mobile-footer-links {
+  padding-top: 5%;
+  font-family: 'Comfortaa', sans-serif;
+  color: #EDA23F;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.privacy-tandc {
+  padding-top: 10%;
+}
+
+/*responsive footer*/
+.web-footer {
+  display: block;
+  visibility: visible;
+}
+.web-footer img {
+  max-width: 100%;
+  height: auto;
+}
+
+.mobile-footer {
+  display: none;
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 720px) {
+  .web-footer {
+      display: none;
+      visibility: hidden;
+  }
+
+  .mobile-footer {
+      display: block;
+      visibility: visible;        
+  }
+}
+
+
 .shop-title {
   text-align: center;
 }
@@ -63,19 +158,20 @@ h1 {
   height: 12px;
 }
 
-.tab {
+.shop-tab {
     display: flex;
     justify-content: space-between;
+    padding: 20px 0 0;
 }
 
 @media only screen and (max-width:960px) {
-  .tab {
+  .shop-tab {
     display: inline-block;
     text-align: center;
   }
 }
 @media only screen and (max-width:720px) {
-  .tab {
+  .shop-tab {
     display: inline-block;
     text-align: center;
   }
@@ -85,7 +181,7 @@ h1 {
 .tab button {
     cursor: pointer;
     padding: 8px 15px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     font-family: 'Titan One', sans-serif;
     font-size: 22px;
     color: #3A2817;
@@ -104,20 +200,20 @@ h1 {
     color: #EDA23F;
     background-color: #3A2817;
 }
-.tabcontent {
+.shop-tabcontent {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    height: 300px;
+    /* height: 300px; */
     padding-top: 60px;
 }
 @media only screen and (max-width:960px) {
-  .tabcontent {
+  .shop-tabcontent {
     display: grid;
     grid-template-columns: 33% 33% 33%;
   }
 }
 @media only screen and (max-width:720px) {
-  .tabcontent {
+  .shop-tabcontent {
     display: grid;
     grid-template-columns: 50% 50%;
   }
@@ -329,3 +425,93 @@ h1 {
     padding-bottom: 30px;
   }
 }
+
+
+/* reviews page */
+.reviews-banner {
+  /* height: 450px; */
+  background-color: #B0824D;
+  text-align: center;
+  width:100%;
+}
+.reviews-banner img {
+  width: 60%;
+  padding-top: 56px;
+  padding-bottom: 120px;
+}
+.reviews-tab {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 56px;
+}
+
+/* @media only screen and (max-width:960px) {
+.reviews-tab {
+  display: inline-block;
+  text-align: center;
+}
+} */
+@media only screen and (max-width:720px) {
+.reviews-tab {
+  display: inline-block;
+  text-align: center;
+}
+}
+.review-template {
+  padding: 20px 0;
+}
+.review-template-img img {
+  width: 100%;
+  border-radius: 12px 0 0 12px;
+}
+.review-template-text {
+  background-color: #3A2817;
+  border-radius: 0 12px 12px 0 ;
+  padding: 56px 6%;
+}
+.review-text-content img {
+  height: 20px;
+}
+.review-text-content h4 {
+  padding: 20px 0 10px;
+  color:#ECE9D5; 
+}
+.review-tags {
+  background-color: #CF5B26;
+  border-radius: 5px;
+  width: fit-content;
+
+}
+.review-tags h6 {
+  color:#ECE9D5; 
+  padding: 5px 20px;
+}
+.review-statements-h6 {
+  color:#ECE9D5; 
+  padding: 20px 0 0;
+}
+.reviews-features {
+  background-color: #EDA23F;
+  text-align: center;
+}
+.reviews-features h1 {
+  padding-bottom: 56px;
+}
+.reviews-features img {
+  padding-bottom: 15px;
+  width:100%;
+}
+.reviews-features a {
+  color:#3A2817;
+}
+.reviews-features h4 {
+  font-family: 'Titan One', sans-serif;
+}
+
+
+
+
+
+
+
+
