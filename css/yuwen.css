@@ -53,16 +53,8 @@ p {
 /*end standardised*/
 
 /*others*/
-.light-brown-font {
+.profile .light-brown-font {
     color: #B0824D;
-}
-
-.page-20-percent h1 {
-    text-align: center;
-}
-
-.page-10-percent h1 {
-    text-align: center;
 }
 
 .actionbutton {
@@ -80,6 +72,162 @@ p {
 }
 
 /*end others*/
+
+/*index*/
+.bannerclass .actionbutton {
+    padding: 12px 36px;
+}
+
+.changestyle {
+    background-color: transparent;
+    border: #CF5B26 2px solid;
+    color: #CF5B26;
+    margin-right: 36px;
+}
+
+.changecolor {
+    color: #CF5B26;
+}
+
+.deals h3 {
+    color: #EDA23F;
+    padding-bottom: 36px;
+}
+
+.differentbg-brown .shop-product a {
+    text-decoration: none;
+    color: #ECE9D5;
+    text-align: center;
+}
+
+.shop-product-img {
+    border-radius: 10px;
+}
+
+.shop-product h5 {
+    padding-top: 15px;
+    color: #ECE9D5;
+  
+}
+
+.shop-product h6 {
+    padding-bottom: 5px;
+    color: #ECE9D5;
+  
+}
+
+.shop-review-line img {
+    padding-bottom: 0;
+    height: 20px;
+    padding-right: 20px;
+}
+
+.shop-review-line {
+    padding-bottom: 10px;
+    height: 12px;
+}
+
+.differentbg-orange {
+    background-color: #EDA23F;
+}
+
+.differentbg-orange h3 {
+    padding-bottom: 56px;
+}
+
+.differentbg-orange .img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.differentbg-orange h5,
+.differentbg-orange h6 {
+    color: #ECE9D5;
+    padding-bottom: 36px;
+}
+
+.differentbg-brown {
+    background-color: #3A2817;
+    color: #EDA23F;
+}
+
+.differentbg-brown h3 {
+    color: #EDA23F;
+    padding-bottom: 36px;
+}
+
+.imglogo {
+    padding: 0 20px 36px;
+}
+
+.videowrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+  }
+  .videowrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+/*end index*/
+
+/*carousel*/
+.suggested-scroll {
+    text-align: center; 
+    overflow-x: auto;
+}
+
+.deals .row {
+    --bs-gutter-x: 0;
+}
+
+.flavours {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 5rem;
+    text-align: center;
+
+    .col {
+        flex: 0 0 auto;
+        max-width: 100%; /* Ensure child elements don't exceed container width */
+        word-wrap: break-word;
+    }
+}
+
+/*for Chrome, Safari, Opera*/
+.flavours::-webkit-scrollbar {
+    width: 0 !important
+}
+
+/*for IE*/
+.element {
+    -ms-overflow-style: none;
+}
+
+/*for Mozilla*/
+.element {
+    overflow: -moz-scrollbars-none;
+}
+
+/* .col-md-4 img {
+    height: 360px;
+    width: auto;
+  } */
+
+@media only screen and (max-width:720px) {
+    .flavours {
+        gap: 2rem;
+    }
+}
+
+
+/*end carousel*/
 
 /*faq tab*/
 .tab {
@@ -112,7 +260,7 @@ p {
 
 .tabcontent {
     display: block;
-    height: 300px;
+    /* height: 300px; */
     padding-top: 60px;
 }
 
@@ -336,31 +484,25 @@ textarea {
 
 .tabacctcontent {
     display: block;
-    height: 300px;
+    /* height: 300px; */
 }
 
-.accountcontainer {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-}
-
-.accountcontainer i {
+.profile i {
     font-size: 20px;
     margin-right: 10px;
     color: #3A2817;
 }
 
-.accountcontainer p {
+.profile p {
     margin-bottom: 0;
 }
 
-.accountcontainer h3 {
+.profile h3 {
     font-family: 'Comfortaa', sans-serif;
     letter-spacing: 1px;
 }
 
-.accountcontainer h6,
+.profile h6,
 .acctrect h6,
 .acctrect-left h6 {
     color: #3A2817;
@@ -434,14 +576,14 @@ textarea {
 
 @media (max-width: 992px) {
 
-    .col-md-8,
-    .col-md-4 {
+    .checkout .col-md-8,
+    .checkout .col-md-4 {
         width: 100%;
         display: block;
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 545px) {
     .table .remove {
         display: none;
     }
@@ -452,34 +594,262 @@ textarea {
 
     .showonlysmall {
         display: block !important;
+        overflow: hidden;
+    }
+
+    .table p {
+        font-size: 12px;
+    }
+
+    .table h6 {
+        font-size: 14px;
     }
 }
 
-@media (max-width: 720px) {
+@media only screen and (max-width: 1215px) {
+
+    .page-20-percent {
+        padding: 56px 8% 120px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .profile {
+        text-align: center;
+    }
+
+    .profile img {
+        padding-bottom: 12px;
+    }
+
+    .imglogo {
+        padding: 0 5px 36px;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .shop-product h5 {
+        font-size: 18px;
+    }
+
+    .shop-product h6 {
+        font-size: 14px;;
+    }
+
+    .shop-review-line img {
+        padding-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
 
     .page-10-percent {
-        padding: 56px 2% 120px;
+        padding: 56px 1% 120px;
     }
-} 
 
-@media (min-width: 1015px) and (max-width: 1199px) {
-    .profile .col-md-3,
-    .profile .col-md-9 {
-        width: 100%;
-    }
-    .page-20-percent {
-        padding: 56px 15% 120px;
+    .indexbtn .actionbutton {
+        padding: 12px 14px;
+        font-size: 14px;
     }
 }
 
-@media (min-width: 576px) and (max-width: 1014px) {
+.web-stars {
+    display: block;
+    visibility: visible;
+}
+
+.mobile-stars {
+    display: none;
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 575px) {
     .page-20-percent {
-        padding: 56px 10% 120px;
+        padding: 56px 1% 120px;
+    }
+
+    .web-stars {
+        display: none;
+        visibility: hidden;
+    }
+    
+    .mobile-stars {
+        display: block;
+        visibility: visible;
+        text-align: center;
     }
 }
 
-@media (max-width: 575px) {
-    .page-20-percent {
-        padding: 56px 2% 120px;
+@media only screen and (max-width: 465px) {
+    .tabacct button {
+        font-size: 13px;
     }
 }
+
+/*subscriptions*/
+/*responsive subscription*/
+.web-subscription {
+    display: block;
+    visibility: visible;
+}
+
+.mobile-subscription {
+    display: none;
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+    .web-subscription {
+        display: none;
+        visibility: hidden;
+    }
+
+    .mobile-subscription {
+        display: block;
+        visibility: visible;
+    }
+}
+
+/*mobile subscription*/
+.mobile-subscription {
+    background-color: #EDA23F;
+    width: 100%;
+    height: 13%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/*web subcription*/
+.web-subscription {
+    background-color: #EDA23F;
+    width: 100%;
+    height: 13%;
+    margin: 0;
+    padding: 0;
+}
+
+.row-subscription {
+    padding: 30px 10% 30px 10%;
+    width: 100%;
+    margin-left: 0 !important;
+}
+
+.row-subscription .changecolor {
+    color: #C33527;
+}
+
+.row-subscription .actionbutton h6 {
+    font-family: 'Titan One', sans-serif;
+    color: #EDA23F;
+}
+
+.web-subscription input[type=text],
+.mobile-subscription input[type=text] {
+    background-color: #CF5B26;
+    color: white;
+    font-family: 'Comfortaa', sans-serif;
+    border: none;
+}
+
+.row-subscription .fa-brands {
+    color: #CF5B26;
+    font-size: 50px;
+    margin-top: 15px;
+    margin-right: 8px;
+}
+
+/*end subscriptions*/
+
+/*footer*/
+/*responsive footer*/
+.web-footer {
+    display: block;
+    visibility: visible;
+}
+
+.mobile-footer {
+    display: none;
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+    .web-footer {
+        display: none;
+        visibility: hidden;
+    }
+
+    .mobile-footer {
+        display: block;
+        visibility: visible;
+    }
+}
+
+/*web footer*/
+.web-footer {
+    background-color: #3A2817;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.row-footer {
+    padding: 50px 10% 10px 10%;
+    width: 100%;
+    margin-left: 0 !important;
+}
+
+.footer-link {
+    font-family: 'Comfortaa', sans-serif;
+    line-height: 1.5;
+    color: #EDA23F;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    padding-bottom: 16px;
+}
+
+.copyright {
+    text-align: center;
+    font-family: 'Comfortaa', sans-serif;
+    color: #EDA23F;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 5%;
+}
+
+/*mobile footer*/
+.mobile-footer {
+    background-color: #3A2817;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.mobile-footer-links {
+    padding-top: 5%;
+    font-family: 'Comfortaa', sans-serif;
+    color: #EDA23F;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.privacy-tandc {
+    padding-top: 10%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.fa-brands {
+    color: #EDA23F;
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+/*end footer*/
