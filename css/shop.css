@@ -57,7 +57,7 @@ h1 {
   font-size: 14px;
   }
 .page-10-percent {
-    padding: 56px 10% 100px;
+    padding: 56px 10% 80px;
 }
 .page-20-percent {
   padding: 56px 20% 120px;
@@ -589,12 +589,13 @@ h1 {
 
 .flavour-spices {
   background-color: #EDA23F;
+  margin-bottom: -12px;
 }
 .suggested-scroll {
   text-align: center;
 }
 .suggested-scroll h3{
-  padding-bottom: 8px;
+  padding-bottom: 20px;
 }
 
 .flavours {
