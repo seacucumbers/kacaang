@@ -34,6 +34,68 @@
     <div id="overlay" onclick="exitImage()">
         <div id="current-img" onclick="exitImage()"></div>
     </div>
+    <!--banner-->
+    <div class="banner">
+        <div class="banner">
+            <img src="images/nav-banner.png" style="width: 100%; vertical-align: top;">
+        </div>
+        <div class="nav-banner">
+            <div class="centered">
+                <a href="index.html"><img src="images/logo.png"></a>
+            </div>
+        </div> 
+    </div>
+    <!--web nav bar-->
+  <div class="web-nav-bar">
+    <div class="row-nav-bar">
+        <div class="row">
+            <div class="nav col-md-10">
+                <a class="nav-links" href="about-us.html">About Us</a>
+                <div class="drop-down">
+                    <a id="shop-link" href="shop.html"></a><button class="btn dropdown-toggle nav-links" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Shop
+                    </button></a>
+                    <div class="dropdown-content">
+                        <a class="dropdown-item" href="#" style="margin-top: 10px;">All Products</a>
+                        <a class="dropdown-item" href="#" style="margin-top: 10px;">On Sale</a>
+                        <a class="dropdown-item" href="#" style="margin-top: 10px; margin-bottom: 10px;">Corporate Orders</a>
+                    </div>
+                </div>
+                <a class="nav-links" href="locate-us.html">Find Us</a>
+                <a class="nav-links" href="contact-us.html">Contact Us</a>
+                <a class="nav-links" href="faqs.html">FAQs</a>
+                <a class="nav-links" href="reviews.html">Reviews</a>  
+            </div>
+            <div class="col-md-1 offset-md-1 nav-icon">
+                <a href="account.html" style="margin-right: 15px;"><i class="nav-icon fa-regular fa-user"></i></a>
+                <a href="cart.html"><i class="nav-icon fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: #3A2817; height: 10px; width: 100%;"></div>
+</div> 
+<!--mobile nav bar-->
+<div class="mobile-nav-bar">
+    <a class="btn btn-primary" data-bs-toggle="collapse" href="#dropdown-content" role="button" aria-expanded="false" aria-controls="collapseExample">
+        <i class="fa-solid fa-bars"></i>
+    </a>
+    <a class="nav-links" href="account.html" style="margin-left: 60%;"><i class="fa-regular fa-user"></i></a>
+    <a class="nav-links" href="cart.html"><i class="fa-solid fa-cart-shopping" style="margin-left: 60%;"></i></a>
+    <div class="collapse" id="dropdown-content">
+        <div class="card card-body">
+            <div class="accordion-body">
+                <a class="nav-links" href="about-us.html">About Us</a> <br>
+                <a class="nav-links" href="shop.html">Shop</a><br>
+                <a class="nav-links" href="Find Us">Find Us</a><br>
+                <a class="nav-links" href="contact-us.html">Contact Us</a><br>
+                <a class="nav-links" href="faqs.html">FAQs</a><br>
+                <a class="nav-links" href="reviews.html">Reviews</a>
+            </div>
+        </div>
+    </div> 
+    <div style="background-color: #3A2817; height: 10px; width: 100%;"></div>
+</div>
+
   
       <!-- actual content -->
     <div class="product-info page-10-percent" id="product-info">
@@ -49,7 +111,7 @@
           <div class="product-info-text">
             <div class="product-name-desc">
                 <h3>Chilli Crab Cashews</h3>
-                <p>product info lorem ipsum dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
+                <h6>A bold tribute to Singapore's iconic dish, our Chilli Crab cashews are a perfect balance of spicy, sweet, and savoury. Indulge in the rich and vibrant flavours of this fan favourite, a must-have for every occasion.</h6>
             </div>
             <div class="shop-review-line">
                 <p><img src="images/stars.png" alt=""> 1 review</p>
@@ -58,23 +120,30 @@
             <div class="product-size-padding">
                 <div class="product-size-grid">
                     <div class="product-size-contents">
-                        <button type="button">150g</button>
-                        <br><p class="orange-text">$4.50</p>
+                        <button type="button"><b class="product-size-weight-text">150g</b> <br> $4.50</button>
+                        <!-- <div class="price-text">
+                            <p class="orange-text">$4.50</p>
+                        </div> -->
+                        
                     </div>
                     <div class="product-size-contents">
-                        <button type="button">400g</button>
-                        <br><p class="orange-text">$8.50</p>
+                        <button type="button"><b class="product-size-weight-text">400g</b> <br> $8.50</button>
+                        <!-- <div class="price-text">
+                            <p class="orange-text">$8.50</p>
+                        </div> -->
                     </div>
                     <div class="product-size-contents">
-                        <button type="button">1kg</button>
-                        <br><p class="orange-text">$17.00</p>
+                        <button type="button"><b class="product-size-weight-text">1kg</b> <br>$17.00</button>
+                        <!-- <div class="price-text">
+                            <p class="orange-text">$17.00</p>
+                        </div> -->
                     </div>
                 </div>
             </div>
 
             <div class="product-add-cart-padding">
                 <div class="product-add-cart-grid">
-                    <div class="prod-add-cart-button prod-cart-contents">
+                    <div class="prod-add-cart-button">
                         <button>ADD TO CART</button>
     
                     </div>
@@ -98,62 +167,64 @@
 
       <!-- other flavours -->
         <div class="flavour-spices page-10-percent">
-            <div class="row suggested-scroll" style="padding-bottom: 2.8%;">
+            <div class="row suggested-scroll">
                 <h3>Suggested Flavours For You</h3>
                 <div class="flavours row">
-                    <div class="col-md-2 col-sm-4 col-4">
+                    <div class="col-md-3 col-sm-4 col-4">
                         <div>
                             <a href="">
                             <img src="images/shop-products/best-mala-flavoured-cashews.png"></a>
-                            <p>Our fiery blend of Sichuan peppercorns, dried chilies, and aromatic spices will awaken your taste buds with a tantalizing heat and numbing sensation</p>
+                            <p>Ignite your taste buds with the fiery sensation of Mala. </p>
                         </div>
                     </div>
-                    <div class="col-md-2 col-sm-4 col-4">
+                    <div class="col-md-3 col-sm-4 col-4">
                         <div>
                             <a href=""><img src="images/shop-products/best-laksa-flavoured-cashews.png"></a>
-                            <p>Experience the rich, aromatic delight of Laksa-spiced cashews. A creamy, spicy fusion that's simply irresistible.</p>
+                            <p>Take a flavourful journey with our Laksa-infused cashews.
+                            </p>
                         </div>
                     </div>
-                    <div class="col-md-2 col-sm-4 col-4">
+                    <div class="col-md-3 col-sm-4 col-4">
                         <div>
                             <a href="">
-                            <img src="images/shop-products/best-chilli-crab-flavoured-cashews.png"></a>
-                            <p>Savor the bold, spicy allure of chili crab-flavored cashews. A fusion of rich crab goodness and fiery heat in every bite.</p>
+                            <img src="images/shop-products/best-salt-roasted-flavoured-cashews.png"></a>
+                            <p>Snack on our perfectly roasted and lightly salted premium cashews.
+                            </p>
                         </div>
                     </div>
-                    <div class="col-md-2 col-sm-4 col-4">
+                    <div class="col-md-3 col-sm-4 col-4">
                         <div>
                             <a href="">
                             <img src="images/shop-products/best-salted-egg-cheese-flavoured-cashews.png"></a>
                             <p>Indulge in the rich, savory allure of salted egg cashews. </p>
                         </div>
                     </div>
-                    <div class="col-md-2 col-sm-4 col-4">
+                    <div class="col-md-3 col-sm-4 col-4">
                         <div>
                             <a href="">
                             <img src="images/shop-products/best-smoky-bbq-flavoured-cashews.png"></a>
-                            <p>Indulge in the smoky delight of BBQ cashews. Savory, irresistible, and perfect for a snack with a kick.</p>
+                            <p>Experience the hearty and smoky goodness of our BBQ-infused cashews.</p>
                         </div>
                     </div>
-                    <div class="col-md-2 col-sm-4 col-4">
+                    <div class="col-md-3 col-sm-4 col-4">
                         <div>
                             <a href="">
                             <img src="images/shop-products/best-lotus-biscoff-flavoured-cashews.png"></a>
-                            <p>Experience the delectable combination of Biscoff and cashews. A sweet, crunchy delight that's utterly irresistible.</p>
+                            <p>Indulge in our irresistible Biscoff-infused cashews. </p>
                         </div>
                     </div>
-                    <div class="col-md-2 col-sm-4 col-4">
+                    <div class="col-md-3 col-sm-4 col-4">
                         <div>
                             <a href="">
                             <img src="images/shop-products/best-chocolate-flavoured-cashews.png"></a>
-                            <p>Delight in the luxurious pairing of chocolate and cashews. A sweet, nutty indulgence that's simply irresistible.</p>
+                            <p>Our chocolate-covered cashews are a decadent delight that will sweeten your life.</p>
                         </div>
                     </div> 
-                    <div class="col-md-2 col-sm-4 col-4">
+                    <div class="col-md-3 col-sm-4 col-4">
                         <div>
                             <a href="">
                             <img src="images/shop-products/best-black-pepper-flavoured-cashews.png"></a>
-                            <p>Savor the bold and zesty kick of black pepper-infused cashews. A flavorful, satisfying blend that's sure to tantalize your taste buds.</p>
+                            <p>Savour the bold and aromatic kick of our Black Pepper cashews.</p>
                         </div>
                     </div>  
                 </div>
@@ -164,17 +235,17 @@
     <div class="web-footer">
         <div class="row-footer">
             <div class="row">
-                <div class="col-sm-2">
-                    <a href="index.html"><img class="Kacaang-logo" src="images/logo.png"></a>
+                <div class="col-md-2">
+                    <a href="index.html"><img class="kacaang-logo" src="images/logo.png"></a>
                 </div>
-                <div class="col-sm-2 offset-sm-1">
+                <div class="col-md-2 offset-md-1">
                     <a class="footer-link" href="shop.html">SHOP</a> <br>
                     <a class="footer-link" href="shop.html">SALES</a> <br>
                     <a class="footer-link" href="corporate.html">OCCASIONS</a> <br>
                     <a class="footer-link" href="corporate.html">CORPORATE</a> <br>
                     <a class="footer-link" href="faqs.html">FAQS</a>
                 </div>
-                <div class="col-sm-3 offset-sm-1">
+                <div class="col-md-3 offset-md-1">
                     <a class="footer-link" href="about-us.html">OUR STORY</a> <br>
                     <a class="footer-link" href="farm.html">OUR FARM</a> <br>
                     <a class="footer-link" href="#">CASHEW CRAZE CLUB</a> <br>
@@ -186,7 +257,7 @@
                         <a href="#"><i class="fa-brands fa-tiktok"></i></a>
                     </div>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-md-3">
                     <a class="footer-link" href="#">PRIVACY POLICY</a> <br>
                     <a class="footer-link" href="#">TERMS AND CONDITIONS</a> <br>
                 </div>
@@ -200,7 +271,7 @@
     <!--mobile footer-->
     <div class="mobile-footer">
         <div class="row-footer">
-            <a href="index.html"><img class="Kacaang-logo" src="images/logo.png">
+            <a href="index.html"><img class="kacaang-logo" src="images/logo.png">
             <div class="mobile-footer-links">
                 <a class="mobile-footer-links" href="shop.html">SHOP</a> <br>
                 <a class="mobile-footer-links" href="shop.html">PROMOTIONS</a> <br>
@@ -219,12 +290,8 @@
                 </div>
             </div>
             <div class="privacy-tandc">
-                <a class="mobile-footer-links" href="#">PRIVACY POLICY &nbsp;</a>
-                <p style="font-family: 'Comfortaa', sans-serif;
-                color: #EDA23F;
-                font-size: 14px;
-                font-weight: bold;"></p>
-                <a class="mobile-footer-links" href="#">TERMS AND CONDITIONS</a> <br>
+                <a class="mobile-footer-links" href="#">PRIVACY POLICY</a> <br>
+                <a class="mobile-footer-links" href="#">TERMS AND CONDITIONS</a>
             </div>
             <div class="copyright">
                 <p class="copyright">COPYRIGHT &copy; 2023 KACAANG. ALL RIGHTS RESERVED.</p>
