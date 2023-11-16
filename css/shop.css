@@ -814,6 +814,7 @@ h1 {
 .orange-bg {
   background-color: #CF5B26;
   border-radius: 12px;
+  padding: 20px 0;
 }
 .find-us-loc-text-title {
   padding: 22px 0;
@@ -822,20 +823,33 @@ h1 {
 .find-us-loc-text-title h3 {
   color: #ECE9D5;
 }
+.find-us-loc-text h4 {
+  color: #ECE9D5;
+  font-family: 'Titan One', sans-serif;
+}
+.find-us-contact-us-text {
+  padding-top: 16px;
+
+}
 
 /* .getting-there-row {
   margin-left: 0 !important;
 } */
 
 .find-us-loc-text {
-  padding-top: 5%;
-  padding-bottom: 5%;
+  /* padding-top: 5%; */
+  padding-bottom: 4%;
   text-align: center;
+}
+.find-us-loc-text h4 {
+  color: #ECE9D5;
+}
+.find-us-loc-text h6 {
+  color: #ECE9D5;
 }
 
 .google-map-warehouse {
-  
-  padding-bottom: 50%;
+  /* padding-bottom: 50%; */
   position: relative;
   text-align: center;
 }
@@ -843,10 +857,11 @@ h1 {
 .google-map-warehouse iframe {
   width: 95%;
   height: 95%;
-  padding-top: 6%;
+  /* padding-top: 6%; */
   left: 0;
   top: 0;
   position: absolute;
+  border-radius: 12px;
 }
 
 
