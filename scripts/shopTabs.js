@@ -1,6 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Trigger a click on the "All Products" button by default
-    document.getElementById("defaultOpen").click();
+    var defaultTab = document.getElementById("defaultOpen");
+    var salesTab = document.getElementById("salesButton");
+
+    if (window.location.hash=== "#sales") {
+      salesTab.click();
+    }
+    else {
+      defaultTab.click();
+    }
   });
   
   function openTab(evt, products) {

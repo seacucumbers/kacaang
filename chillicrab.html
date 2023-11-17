@@ -27,13 +27,11 @@
          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
          crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <script src="scripts/imageClick.js"></script>
+    
     <script src="scripts/productEditQty.js"></script>
 </head>
 <body>
-    <div id="overlay" onclick="exitImage()">
-        <div id="current-img" onclick="exitImage()"></div>
-    </div>
+    
     <!--banner-->
     <div class="banner">
         <div class="banner">
@@ -57,7 +55,7 @@
                     </button></a>
                     <div class="dropdown-content">
                         <a class="dropdown-item" href="shop.html" style="margin-top: 10px;">All Products</a>
-                        <a class="dropdown-item" href="#" style="margin-top: 10px;">On Sale</a>
+                        <a class="dropdown-item" href="shop.html#sales" style="margin-top: 10px;">On Sale</a>
                         <a class="dropdown-item" href="corporate.html" style="margin-top: 10px; margin-bottom: 10px;">Corporate Orders</a>
                     </div>
                 </div>
@@ -103,7 +101,7 @@
           <!-- 3 part grid starts here -->
           <!-- first column -->
           <div class="product-info-img">
-            <img src="images/shop-products/best-chilli-crab-flavoured-cashews.png" alt="" id="main-img" onclick="expandImage(event, 'main-img')">
+            <img src="images/shop-products/best-chilli-crab-flavoured-cashews.png" alt="">
           </div>
           <!-- second column / empty column -->
           <!-- <div class=""></div> -->
@@ -113,7 +111,7 @@
                 <h3>Chilli Crab Cashews</h3>
                 <h6>A bold tribute to Singapore's iconic dish, our Chilli Crab cashews are a perfect balance of spicy, sweet, and savoury. Indulge in the rich and vibrant flavours of this fan favourite, a must-have for every occasion.</h6>
             </div>
-            <div class="shop-review-line">
+            <div class="ind-prod-review-line">
                 <p><img src="images/stars.png" alt=""> 1 review</p>
             </div>
             
@@ -240,15 +238,14 @@
                 </div>
                 <div class="col-md-2 offset-md-1">
                     <a class="footer-link" href="shop.html">SHOP</a> <br>
-                    <a class="footer-link" href="shop.html">SALES</a> <br>
-                    <a class="footer-link" href="corporate.html">OCCASIONS</a> <br>
+                    <a class="footer-link" href="shop.html#sales">ON SALE</a> <br>
                     <a class="footer-link" href="corporate.html">CORPORATE</a> <br>
                     <a class="footer-link" href="faqs.html">FAQS</a>
                 </div>
                 <div class="col-md-3 offset-md-1">
                     <a class="footer-link" href="about-us.html">OUR STORY</a> <br>
                     <a class="footer-link" href="farm.html">OUR FARM</a> <br>
-                    <a class="footer-link" href="#">CASHEW CRAZE CLUB</a> <br>
+                    <a class="footer-link" href="account.html">CASHEW CRAZE CLUB</a> <br>
                     <a class="footer-link" href="contact-us.html">CONTACT US</a> <br>
                     <div class="icons">
                         <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
@@ -274,13 +271,12 @@
             <a href="index.html"><img class="kacaang-logo" src="images/logo.png">
             <div class="mobile-footer-links">
                 <a class="mobile-footer-links" href="shop.html">SHOP</a> <br>
-                <a class="mobile-footer-links" href="shop.html">PROMOTIONS</a> <br>
-                <a class="mobile-footer-links" href="corporate.html">OCCASIONS</a> <br>
+                <a class="mobile-footer-links" href="shop.html#sales">ON SALE</a> <br>
                 <a class="mobile-footer-links" href="corporate.html">CORPORATE</a> <br>
                 <a class="mobile-footer-links" href="faqs.html">FAQS</a> <br>
                 <a class="mobile-footer-links" href="about-us.html">OUR STORY</a> <br>
                 <a class="mobile-footer-links" href="farm.html">OUR FARM</a> <br>
-                <a class="mobile-footer-links" href="#">CASHEW CRAZE CLUB</a> <br>
+                <a class="mobile-footer-links" href="account.html">CASHEW CRAZE CLUB</a> <br>
                 <a class="mobile-footer-links" href="contact-us.html">CONTACT US</a> <br>
                 <div class="icons">
                     <a href="#"><i class="fa-brands fa-x-twitter"></i></a>

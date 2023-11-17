@@ -374,6 +374,9 @@ h1 {
     display: inline-block;
     text-align: center;
   }
+  .shop-tab button {
+    margin-bottom: 8px;
+  }
 }
 
    
@@ -424,7 +427,8 @@ h1 {
     text-align: center;
 }
 .shop-product-img {
-    height: 250px;
+  width: 85%;
+    /* height: 250px; */
     /* padding-bottom: 15px; */
     border-radius: 10px;
 }
@@ -441,15 +445,21 @@ h1 {
 }
 .shop-review-line {
     padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+@media only screen and (max-width:720px) {
+  .shop-review-line {
+    padding-bottom: 30px;
+    display: block;
+    text-align: center;
+}
+.shop-review-line img {
+  padding-right: 0;
+
+}
 }
 
-/* @supports (display: flex) {
-  @media screen and (min-width:900px) {
-    body {
-      padding: 1rem 3rem;
-    }
-  }
-} */
 
 
 /* individual products */
@@ -500,14 +510,26 @@ h1 {
 .product-name-desc {
   padding-bottom: 20px;
 }
-.product-size-padding {
-  /* padding-right: 20%; */
-}
+
 @media only screen and (max-width:720px) {
   .product-size-padding {
     padding-right: 0;
   }
+  .product-info-img img {
+    width: 100%;
+  }
 }
+
+.ind-prod-review-line img {
+  padding-bottom: 0;
+  height: 20px;
+  padding-right: 20px;
+}
+.ind-prod-review-line {
+  padding-bottom: 30px;
+  
+}
+
 .product-size-grid {
   display: grid;
   grid-template-columns: 33% 33% 33%;
@@ -647,15 +669,30 @@ h1 {
   padding: 0;
   width: 100%;
 }
-/* .reviews-banner img {
-  width: 60%;
-  padding-top: 56px;
-  padding-bottom: 120px;
-} */
+.mobile-review-banner {
+  display: none;
+}
+
+
+@media only screen and (max-width:720px) {
+  .reviews-banner {
+    display: none;
+  }
+  .mobile-review-banner {
+    display: block;
+  }
+  .mobile-review-banner img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  }
+
+
 .reviews-tab {
   display: flex;
   justify-content: space-between;
-  padding: 0 0 56px;
+  padding: 24px 0 56px;
 }
 
 /* @media only screen and (max-width:960px) {
@@ -668,6 +705,10 @@ h1 {
 .reviews-tab {
   display: inline-block;
   text-align: center;
+}
+.reviews-tab button {
+
+  margin-bottom: 8px;
 }
 }
 .review-template {
