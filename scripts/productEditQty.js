@@ -25,3 +25,6 @@ function minus() {
 //     qty = qty - 1;
 //     document.getElementById("quantity").innerText = qty;
 // }
+
+
+

@@ -2,11 +2,594 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <p>HELLO TESTING</p>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - KACAANG </title>
+
+    <!--favicon-->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+    <!--css / fonts-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Paytone+One&family=Titan+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--javascript-->
+    <script src="scripts/shopTabs.js">
+      document.addEventListener("DOMContentLoaded", function () {
+    // Trigger a click on the "All Products" button by default
+    document.getElementById("defaultOpen").click();
     
+  });
+    </script>
+
+  </head>
+  <header>
+
+  </header>
+  <body>
+    <!--banner-->
+    <div class="banner">
+      <div class="banner">
+          <img src="images/nav-banner.png" style="width: 100%; vertical-align: top;">
+      </div>
+      <div class="nav-banner">
+          <div class="centered">
+              <a href="index.html"><img src="images/logo.png"></a>
+          </div>
+      </div> 
+  </div>
+  <!--web nav bar-->
+  <div class="web-nav-bar">
+      <div class="row-nav-bar">
+          <div class="row">
+              <div class="nav col-md-10">
+                  <a class="nav-links" href="about-us.html">About Us</a>
+                  <div class="drop-down">
+                      <a id="shop-link" href="shop.html"></a><button class="btn dropdown-toggle nav-links" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Shop
+                      </button></a>
+                      <div class="dropdown-content">
+                          <a class="dropdown-item" href="shop.html" style="margin-top: 10px;">All Products</a>
+                          <a class="dropdown-item" href="shop.html#sales" onclick="document.getElementById('salesButton').click();" style="margin-top: 10px;">On Sale</a>
+                          <a class="dropdown-item" href="corporate.html" style="margin-top: 10px; margin-bottom: 10px;">Corporate Orders</a>
+                      </div>
+                  </div>
+                  <a class="nav-links" href="find-us.html">Find Us</a>
+                  <a class="nav-links" href="contact-us.html">Contact Us</a>
+                  <a class="nav-links" href="faqs.html">FAQs</a>
+                  <a class="nav-links" href="reviews.html">Reviews</a>  
+              </div>
+              <div class="col-md-1 offset-md-1 nav-icon">
+                  <a href="account.html" style="margin-right: 15px;"><i class="nav-icon fa-regular fa-user"></i></a>
+                  <a href="cart.html"><i class="nav-icon fa-solid fa-cart-shopping"></i></a>
+              </div>
+          </div>
+      </div>
+      <div style="background-color: #3A2817; height: 10px; width: 100%;"></div>
+  </div> 
+  <!--mobile nav bar-->
+  <div class="mobile-nav-bar">
+      <a class="btn btn-primary" data-bs-toggle="collapse" href="#dropdown-content" role="button" aria-expanded="false" aria-controls="collapseExample">
+          <i class="fa-solid fa-bars"></i>
+      </a>
+      <a class="nav-links" href="account.html" style="margin-left: 60%;"><i class="fa-regular fa-user"></i></a>
+      <a class="nav-links" href="cart.html"><i class="fa-solid fa-cart-shopping" style="margin-left: 60%;"></i></a>
+      <div class="collapse" id="dropdown-content">
+          <div class="card card-body">
+              <div class="accordion-body">
+                  <a class="nav-links" href="about-us.html">About Us</a> <br>
+                  <a class="nav-links" href="shop.html">Shop</a><br>
+                  <a class="nav-links" href="find-us.html">Find Us</a><br>
+                  <a class="nav-links" href="contact-us.html">Contact Us</a><br>
+                  <a class="nav-links" href="faqs.html">FAQs</a><br>
+                  <a class="nav-links" href="reviews.html">Reviews</a>
+              </div>
+          </div>
+      </div> 
+      <div style="background-color: #3A2817; height: 10px; width: 100%;"></div>
+  </div>
+
+
+  
+    <div class="page-10-percent">
+      <div class="shop-title">
+        <h1>Get Crunchin'</h1>
+      </div>
+      <!-- tab buttons -->
+      <div class="tab shop-tab">
+        <button class="tablinks" onclick="openTab(event, 'all')" id="defaultOpen">All</button>
+        <button class="tablinks" onclick="openTab(event, 'sales')" id="salesButton">On Sale</button>
+        <button class="tablinks" onclick="openTab(event, 'new')">New</button>
+        <button class="tablinks" onclick="openTab(event, 'favourites')">Fan Favourites</button>
+        <button class="tablinks" onclick="openTab(event, 'classics')">Classics</button>
+        <button class="tablinks" onclick="openTab(event, 'local')">Local Delights</button>
+        <button class="tablinks" onclick="openTab(event, 'bundles')">Bundles</button>
+      </div>
+
+      <!-- tab content -->
+
+      <!-- all products -->
+      <div id="all" class="tabcontent shop-tabcontent">
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/shop-products/best-black-pepper-flavoured-cashews.png" class="shop-product-img">
+            <h5> Black Pepper Cashews</h5>
+            <div class="shop-review-line">
+              <img src="images/stars.png" alt="" height="12"><h6>1 review</h6>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="chillicrab.html">
+          <div class="shop-product">
+            <img src="images/shop-products/best-chilli-crab-flavoured-cashews.png" class="shop-product-img">
+            <h5> Chilli Crab Cashews</h5>
+            <div class="shop-review-line">
+              <img src="images/stars.png" alt="" height="12"><h6>1 review</h6>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/shop-products/best-chocolate-flavoured-cashews.png" class="shop-product-img">
+            <h5> Chocolate Cashews</h5>
+            <div class="shop-review-line">
+              <img src="images/stars.png" alt="" height="12"><h6>1 review</h6>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/shop-products/best-laksa-flavoured-cashews.png" class="shop-product-img">
+            <h5> Laksa Cashews</h5>
+            <div class="shop-review-line">
+              <img src="images/stars.png" alt="" height="12"><h6>1 review</h6>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/shop-products/best-lotus-biscoff-flavoured-cashews.png" class="shop-product-img">
+            <h5> Lotus Biscoff Cashews</h5>
+            <div class="shop-review-line">
+              <img src="images/stars.png" alt="" height="12"><h6>1 review</h6>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/shop-products/best-mala-flavoured-cashews.png" class="shop-product-img">
+            <h5> Mala Cashews</h5>
+            <div class="shop-review-line">
+              <img src="images/stars.png" alt="" height="12"><h6>1 review</h6>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/shop-products/best-salt-roasted-flavoured-cashews.png" class="shop-product-img">
+            <h5> Salt-roasted Cashews</h5>
+            <div class="shop-review-line">
+              <img src="images/stars.png" alt="" height="12"><h6>1 review</h6>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/shop-products/best-salted-egg-cheese-flavoured-cashews.png" class="shop-product-img">
+            <h5> Salted Egg and Cheese Cashews</h5>
+            <div class="shop-review-line">
+              <img src="images/stars.png" alt="" height="12"><h6>1 review</h6>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/shop-products/best-smoky-bbq-flavoured-cashews.png" class="shop-product-img">
+            <h5> Smoky BBQ Cashews</h5>
+            <div class="shop-review-line">
+              <img src="images/stars.png" alt="" height="12"><h6>1 review</h6>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="chillicrab.html">
+          <div class="shop-product">
+            <img src="images/shop-products/best-flavoured-cashews-bundle-3.png" class="shop-product-img">
+            <h5> Bundle A</h5>
+            <div class="shop-review-line">
+              <img src="images/stars.png" alt="" height="12"><h6>1 review</h6>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="chillicrab.html">
+          <div class="shop-product">
+            <img src="images/shop-products/best-flavoured-cashews-bundle-6.png" class="shop-product-img">
+            <h5> Bundle B</h5>
+            <div class="shop-review-line">
+              <img src="images/stars.png" alt="" height="12"><h6>1 review</h6>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="chillicrab.html">
+          <div class="shop-product">
+            <img src="images/shop-products/best-flavoured-cashews-bundle-9.png" class="shop-product-img">
+            <h5> Bundle C</h5>
+            <div class="shop-review-line">
+              <img src="images/stars.png" alt="" height="12"><h6>1 review</h6>
+            </div>
+          </div>
+          </a>
+        </div>
+
+
+      </div>
+
+      <!-- On Sale -->
+      <div id="sales" class="tabcontent shop-tabcontent" style="scroll-margin-top: 12em;">
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/shop-products/best-mala-flavoured-cashews.png" class="shop-product-img">
+            <h5>  Mala Cashews</h5>
+            <div class="shop-review-line">
+              <img src="images/stars.png" alt="" height="12"><h6>1 review</h6>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="chillicrab.html">
+          <div class="shop-product">
+            <img src="images/shop-products/best-flavoured-cashews-bundle-3.png" class="shop-product-img">
+            <h5> Bundle A</h5>
+            <div class="shop-review-line">
+              <img src="images/stars.png" alt="" height="12"><h6>1 review</h6>
+            </div>
+          </div>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- new products-->
+      <div id="new" class="tabcontent shop-tabcontent">
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/shop-products/best-laksa-flavoured-cashews.png" class="shop-product-img">
+            <h5>  Laksa Cashews </h5>
+            <div class="shop-review-line">
+              <img src="images/stars.png" alt="" height="12"><h6>1 review</h6>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/shop-products/best-lotus-biscoff-flavoured-cashews.png" class="shop-product-img">
+            <h5> Lotus Biscoff Cashews</h5>
+            <div class="shop-review-line">
+              <img src="images/stars.png" alt="" height="12"><h6>1 review</h6>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/shop-products/best-mala-flavoured-cashews.png" class="shop-product-img">
+            <h5> Mala Cashews</h5>
+            <div class="shop-review-line">
+              <img src="images/stars.png" alt="" height="12"><h6>1 review</h6>
+            </div>
+          </div>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- fan favourites-->
+      <div id="favourites" class="tabcontent shop-tabcontent">
+
+        <div class="shop-content">
+          <a href="chillicrab.html">
+          <div class="shop-product">
+            <img src="images/shop-products/best-chilli-crab-flavoured-cashews.png" class="shop-product-img">
+            <h5>  Chilli Crab Cashews </h5>
+            <div class="shop-review-line">
+              <img src="images/stars.png" alt="" height="12"><h6>1 review</h6>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/shop-products/best-lotus-biscoff-flavoured-cashews.png" class="shop-product-img">
+            <h5> Lotus Biscoff Cashews</h5>
+            <div class="shop-review-line">
+              <img src="images/stars.png" alt="" height="12"><h6>1 review</h6>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/shop-products/best-salted-egg-cheese-flavoured-cashews.png" class="shop-product-img">
+            <h5> Salted Egg and Cheese Cashews</h5>
+            <div class="shop-review-line">
+              <img src="images/stars.png" alt="" height="12"><h6>1 review</h6>
+            </div>
+          </div>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- classics-->
+      <div id="classics" class="tabcontent shop-tabcontent">
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/shop-products/best-chocolate-flavoured-cashews.png" class="shop-product-img">
+            <h5>  Chocolate Cashews </h5>
+            <div class="shop-review-line">
+              <img src="images/stars.png" alt="" height="12"><h6>1 review</h6>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/shop-products/best-salt-roasted-flavoured-cashews.png" class="shop-product-img">
+            <h5> Salt-roasted Cashews</h5>
+            <div class="shop-review-line">
+              <img src="images/stars.png" alt="" height="12"><h6>1 review</h6>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/shop-products/best-smoky-bbq-flavoured-cashews.png" class="shop-product-img">
+            <h5> Smoky BBQ Cashews</h5>
+            <div class="shop-review-line">
+              <img src="images/stars.png" alt="" height="12"><h6>1 review</h6>
+            </div>
+          </div>
+          </a>
+        </div>
+
+      </div>
+
+       <!-- local-->
+       <div id="local" class="tabcontent shop-tabcontent">
+
+        <div class="shop-content">
+          <a href="chillicrab.html">
+          <div class="shop-product">
+            <img src="images/shop-products/best-chilli-crab-flavoured-cashews.png" class="shop-product-img">
+            <h5>  Chilli Crab Cashews </h5>
+            <div class="shop-review-line">
+              <img src="images/stars.png" alt="" height="12"><h6>1 review</h6>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/shop-products/best-laksa-flavoured-cashews.png" class="shop-product-img">
+            <h5> Laksa Cashews</h5>
+            <div class="shop-review-line">
+              <img src="images/stars.png" alt="" height="12"><h6>1 review</h6>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/shop-products/best-mala-flavoured-cashews.png" class="shop-product-img">
+            <h5> Mala Cashews</h5>
+            <div class="shop-review-line">
+              <img src="images/stars.png" alt="" height="12"><h6>1 review</h6>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/shop-products/best-salted-egg-cheese-flavoured-cashews.png" class="shop-product-img">
+            <h5> Salted Egg and Cheese Cashews</h5>
+            <div class="shop-review-line">
+              <img src="images/stars.png" alt="" height="12"><h6>1 review</h6>
+            </div>
+          </div>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- bundles-->
+      <div id="bundles" class="tabcontent shop-tabcontent">
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/shop-products/best-flavoured-cashews-bundle-3.png" class="shop-product-img">
+            <h5>  Bundle A </h5>
+            <div class="shop-review-line">
+              <img src="images/stars.png" alt="" height="12"><h6>1 review</h6>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/shop-products/best-flavoured-cashews-bundle-6.png" class="shop-product-img">
+            <h5> Bundle B</h5>
+            <div class="shop-review-line">
+              <img src="images/stars.png" alt="" height="12"><h6>1 review</h6>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="shop-content">
+          <a href="#">
+          <div class="shop-product">
+            <img src="images/shop-products/best-flavoured-cashews-bundle-9.png" class="shop-product-img">
+            <h5> Bundle C</h5>
+            <div class="shop-review-line">
+              <img src="images/stars.png" alt="" height="12"><h6>1 review</h6>
+            </div>
+          </div>
+          </a>
+        </div>
+
+      </div>
+
+      
+
+
+
+    </div>
+
+    <!--web footer-->
+    <div class="web-footer">
+      <div class="row-footer">
+          <div class="row">
+              <div class="col-md-2">
+                  <a href="index.html"><img class="kacaang-logo" src="images/logo.png"></a>
+              </div>
+              <div class="col-md-2 offset-md-1">
+                  <a class="footer-link" href="shop.html">SHOP</a> <br>
+                  <a class="footer-link" href="shop.html#sales" onclick="document.getElementById('salesButton').click();">SALES</a> <br>
+                  <a class="footer-link" href="corporate.html">OCCASIONS</a> <br>
+                  <a class="footer-link" href="corporate.html">CORPORATE</a> <br>
+                  <a class="footer-link" href="faqs.html">FAQS</a>
+              </div>
+              <div class="col-md-3 offset-md-1">
+                  <a class="footer-link" href="about-us.html">OUR STORY</a> <br>
+                  <a class="footer-link" href="farm.html">OUR FARM</a> <br>
+                  <a class="footer-link" href="account.html">CASHEW CRAZE CLUB</a> <br>
+                  <a class="footer-link" href="contact-us.html">CONTACT US</a> <br>
+                  <div class="icons">
+                      <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                      <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <a class="footer-link" href="#">PRIVACY POLICY</a> <br>
+                  <a class="footer-link" href="#">TERMS AND CONDITIONS</a> <br>
+              </div>
+          </div>
+          <div class="copyright">
+              <p class="copyright">COPYRIGHT &copy; 2023 KACAANG. ALL RIGHTS RESERVED.</p>
+          </div>
+      </div>
+      <img src="images/nuts-banner.png" style="width: 100%;">
+  </div>
+  <!--mobile footer-->
+  <div class="mobile-footer">
+      <div class="row-footer">
+          <a href="index.html"><img class="kacaang-logo" src="images/logo.png">
+          <div class="mobile-footer-links">
+              <a class="mobile-footer-links" href="shop.html">SHOP</a> <br>
+              <a class="mobile-footer-links" href="shop.html#sales" onclick="document.getElementById('salesButton').click();">PROMOTIONS</a> <br>
+              <a class="mobile-footer-links" href="corporate.html">OCCASIONS</a> <br>
+              <a class="mobile-footer-links" href="corporate.html">CORPORATE</a> <br>
+              <a class="mobile-footer-links" href="faqs.html">FAQS</a> <br>
+              <a class="mobile-footer-links" href="about-us.html">OUR STORY</a> <br>
+              <a class="mobile-footer-links" href="farm.html">OUR FARM</a> <br>
+              <a class="mobile-footer-links" href="account.html">CASHEW CRAZE CLUB</a> <br>
+              <a class="mobile-footer-links" href="contact-us.html">CONTACT US</a> <br>
+              <div class="icons">
+                  <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+              </div>
+          </div>
+          <div class="privacy-tandc">
+              <a class="mobile-footer-links" href="#">PRIVACY POLICY</a> <br>
+              <a class="mobile-footer-links" href="#">TERMS AND CONDITIONS</a>
+          </div>
+          <div class="copyright">
+              <p class="copyright">COPYRIGHT &copy; 2023 KACAANG. ALL RIGHTS RESERVED.</p>
+          </div>
+      </div>
+      <img src="images/nuts-banner.png" style="width: 100%;">
+  </div>
 
   </body>
 </html>
