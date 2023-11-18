@@ -439,21 +439,21 @@ h1 {
 .sale-tag-img {
   height: 90px;
   position: absolute;
-  top: 850px;
-  left: 29%;
+  top: 448px;
+  left: 49%;
   z-index: 2;
 }
 .sale-tag-img-2 {
   height: 90px;
   position: absolute;
-  top: 1268px;
-  left: 29%;
+  top: 1627px;
+  left: 9%;
   z-index: 2;
 }
 .sale-tag-img-3 {
   height: 90px;
   position: absolute;
-  top: 456px;
+  top: 448px;
   left: 9%;
   z-index: 2;
 }
@@ -461,14 +461,22 @@ h1 {
 .sale-tag-img-4 {
   height: 90px;
   position: absolute;
-  top: 456px;
+  top: 448px;
   left: 29%;
   z-index: 2;
 }
+
 .sale-tag-img-5 {
   height: 90px;
   position: absolute;
-  top: 456px;
+  top: 840px;
+  left: 29%;
+  z-index: 2;
+}
+.sale-tag-img-6 {
+  height: 90px;
+  position: absolute;
+  top: 448px;
   left: 49%;
   z-index: 2;
 }
@@ -706,7 +714,8 @@ h1 {
 
 .col-md-3 img {
   width: 100%;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
 }
 
 @media only screen and (max-width:720px) {
