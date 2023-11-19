@@ -1640,6 +1640,18 @@ textarea {
   visibility: visible;
 }
 
+.web-subscription button {
+  font-family: 'Titan One', sans-serif !important;
+  color: #EDA23F !important;
+  font-size: 22px !important;
+  background-color: #CF5B26 !important;
+  border: none !important;
+}
+
+.web-subscription button:hover {
+  color: #3A2817 !important;
+}
+
 .mobile-subscription {
   display: none;
   visibility: hidden;
