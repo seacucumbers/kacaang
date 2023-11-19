@@ -11,6 +11,7 @@ red: #C33527
   padding: 0;
   margin: 0;
 }
+
 body {
   background-color: #ECE9D5;
   overflow-x: hidden;
@@ -20,46 +21,50 @@ a {
   font-family: 'Comfortaa', sans-serif;
   letter-spacing: 1px;
 }
+
 h1 {
   font-family: 'Titan One', sans-serif;
   font-size: 56px;
   letter-spacing: 1px;
-  color:#3A2817;
-  }
-  
-  h3 {
+  color: #3A2817;
+}
+
+h3 {
   font-family: 'Titan One', sans-serif;
   font-size: 38px;
   letter-spacing: 1px;
-  color:#3A2817;
-  }
-  h4 {
-    font-family: 'Comfortaa', sans-serif;
-    font-size: 28px;
-    letter-spacing: 1px;
-    color:#3A2817;
-    }
-  
-  h5 {
+  color: #3A2817;
+}
+
+h4 {
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 28px;
+  letter-spacing: 1px;
+  color: #3A2817;
+}
+
+h5 {
   font-family: 'Comfortaa', sans-serif;
   font-size: 22px;
   letter-spacing: 1px;
-  }
-  
-  h6 {
+}
+
+h6 {
   font-family: 'Comfortaa', sans-serif;
   letter-spacing: 1px;
   font-size: 18px;
-  }
-  
-  p {
+}
+
+p {
   font-family: 'Comfortaa', sans-serif;
   letter-spacing: 1px;
   font-size: 14px;
-  }
-.page-10-percent {
-    padding: 56px 10% 80px;
 }
+
+.page-10-percent {
+  padding: 56px 10% 80px;
+}
+
 .page-20-percent {
   padding: 56px 20% 120px;
 }
@@ -77,19 +82,19 @@ h1 {
 
 @media only screen and (max-width: 600px) {
   .web-nav-bar {
-      display: none;
-      visibility: hidden;
+    display: none;
+    visibility: hidden;
   }
 
   .mobile-nav-bar {
-      display: block;
-      visibility: visible;        
+    display: block;
+    visibility: visible;
   }
 }
 
 /*banner*/
 .banner {
-  background-color:#3A2817;
+  background-color: #3A2817;
   height: 100%;
   width: 100%;
   position: relative;
@@ -123,7 +128,7 @@ h1 {
   background-color: #EDA23F;
   padding: 0;
   margin: 0;
-  width: 100%;   
+  width: 100%;
 }
 
 .row-nav-bar {
@@ -314,10 +319,11 @@ h1 {
 .privacy-tandc {
   padding-top: 10%;
 }
+
 .fa-brands {
   color: #EDA23F;
   font-size: 20px;
-  margin-right: 8px;    
+  margin-right: 8px;
 }
 
 .fa-brands:hover {
@@ -337,13 +343,13 @@ h1 {
 
 @media only screen and (max-width: 600px) {
   .web-footer {
-      display: none;
-      visibility: hidden;
+    display: none;
+    visibility: hidden;
   }
 
   .mobile-footer {
-      display: block;
-      visibility: visible;        
+    display: block;
+    visibility: visible;
   }
 }
 
@@ -1033,79 +1039,79 @@ h1 {
 
   .checkout .col-md-8,
   .checkout .col-md-4 {
-      width: 100%;
-      display: block;
+    width: 100%;
+    display: block;
   }
 }
 
 @media (max-width: 545px) {
   .table .remove {
-      display: none;
+    display: none;
   }
 
   .table .removesmall {
-      display: none;
+    display: none;
   }
 
   .showonlysmall {
-      display: block !important;
-      overflow: hidden;
+    display: block !important;
+    overflow: hidden;
   }
 
   .table p {
-      font-size: 12px;
+    font-size: 12px;
   }
 
   .table h6 {
-      font-size: 14px;
+    font-size: 14px;
   }
 }
 
 @media only screen and (max-width: 1215px) {
 
   .page-20-percent {
-      padding: 56px 8% 120px;
+    padding: 56px 8% 120px;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .profile {
-      text-align: center;
+    text-align: center;
   }
 
   .profile img {
-      padding-bottom: 12px;
+    padding-bottom: 12px;
   }
 
   .imglogo {
-      padding: 0 5px 36px;
+    padding: 0 5px 36px;
   }
 }
 
 @media only screen and (max-width: 770px) {
   .shop-product h5 {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .shop-product h6 {
-      font-size: 14px;
-      ;
+    font-size: 14px;
+    ;
   }
 
   .shop-review-line img {
-      padding-right: 10px;
+    padding-right: 10px;
   }
 }
 
 @media only screen and (max-width: 720px) {
 
   .page-10-percent {
-      padding: 56px 1% 120px;
+    padding: 56px 1% 120px;
   }
 
   .indexbtn .actionbutton {
-      padding: 12px 14px;
-      font-size: 14px;
+    padding: 12px 14px;
+    font-size: 14px;
   }
 }
 
@@ -1121,30 +1127,51 @@ h1 {
 
 @media only screen and (max-width: 575px) {
   .page-20-percent {
-      padding: 56px 1% 120px;
+    padding: 56px 1% 120px;
   }
 
   .web-stars {
-      display: none;
-      visibility: hidden;
+    display: none;
+    visibility: hidden;
   }
 
   .mobile-stars {
-      display: block;
-      visibility: visible;
-      text-align: center;
+    display: block;
+    visibility: visible;
+    text-align: center;
   }
 }
 
 @media only screen and (max-width: 465px) {
   .tabacct button {
-      font-size: 13px;
+    font-size: 13px;
   }
 }
 
 /*index*/
 .bannerclass .actionbutton {
   padding: 12px 36px;
+}
+
+.index-image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.index-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  min-height: 500px;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
 }
 
 .changestyle {
@@ -1160,7 +1187,6 @@ h1 {
 
 .deals h3 {
   color: #EDA23F;
-  padding-bottom: 36px;
 }
 
 .deals .row {
@@ -1529,13 +1555,13 @@ textarea {
 
 @media only screen and (max-width: 600px) {
   .web-subscription {
-      display: none;
-      visibility: hidden;
+    display: none;
+    visibility: hidden;
   }
 
   .mobile-subscription {
-      display: block;
-      visibility: visible;
+    display: block;
+    visibility: visible;
   }
 }
 
