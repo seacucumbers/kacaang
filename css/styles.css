@@ -975,7 +975,16 @@ h1 {
   border-radius: 12px;
 }
 
+.pdpa-page ol {
+  display: list-item;
+  font-family: 'Comfortaa', sans-serif;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
 
+.pdpa-page h1 {
+  text-align: center;
+}
 
 
 
