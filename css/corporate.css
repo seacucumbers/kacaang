@@ -426,10 +426,23 @@ label {
     padding-bottom: 16px;
 }
 
+.footer-link:hover {
+    color: #CF5B26;
+}
+
 .fa-brands {
     color: #EDA23F;
     font-size: 20px;
     margin-right: 8px;    
+}
+
+.fa-brands:hover {
+    color: #CF5B26;
+}
+
+.web-footer .kacaang-logo {
+    width: 100%;
+    height: auto;
 }
 
 .copyright {
@@ -451,7 +464,7 @@ label {
     text-align: center;
 }
 
-.Kacaang-logo {
+.mobile-footer .kacaang-logo {
     width: 50%;
     height: auto;
 }
