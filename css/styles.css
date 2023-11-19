@@ -1266,7 +1266,8 @@ p {
 .differentbg-orange h5,
 .differentbg-orange h6 {
   color: #ECE9D5;
-  padding-bottom: 36px;
+  padding-bottom: 2px;
+  text-align: left;
 }
 
 .differentbg-brown {
@@ -1658,4 +1659,11 @@ textarea {
   font-size: 50px;
   margin-top: 15px;
   margin-right: 8px;
+}
+
+/*subscription text header*/
+h7 {
+  font-family: 'Titan One', sans-serif;
+  font-size: 38px;
+  color:#3A2817;
 }
