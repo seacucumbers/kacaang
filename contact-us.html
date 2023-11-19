@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - KACAANG</title>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Titan+One&display=swap" rel="stylesheet">
+    <!--Font Awesome-->
+    <!-- FONT AWESOME !-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap css !-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/contact-us.css">
+</head>
+
+<body>
+    <!--banner-->
+    <div class="banner">
+        <div class="banner">
+            <img src="images/nav-banner.png" style="width: 100%; vertical-align: top;">
+        </div>
+        <div class="nav-banner">
+            <div class="centered">
+                <a href="index.html"><img src="images/logo.png"></a>
+            </div>
+        </div> 
+    </div>
+    <!--web nav bar-->
+    <div class="web-nav-bar">
+        <div class="row-nav-bar">
+            <div class="row">
+                <div class="nav col-md-10">
+                    <a class="nav-links" href="about-us.html">About Us</a>
+                    <div class="drop-down">
+                        <a id="shop-link" href="shop.html"></a><button class="btn dropdown-toggle nav-links" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Shop
+                        </button></a>
+                        <div class="dropdown-content">
+                            <a class="dropdown-item" href="shop.html" style="margin-top: 10px;">All Products</a>
+                            <a class="dropdown-item" href="shop.html#sales" style="margin-top: 10px;">On Sale</a>
+                            <a class="dropdown-item" href="shop.html" style="margin-top: 10px; margin-bottom: 10px;">Corporate Orders</a>
+                        </div>
+                    </div>
+                    <a class="nav-links" href="locate-us.html">Find Us</a>
+                    <a class="nav-links" href="contact-us.html">Contact Us</a>
+                    <a class="nav-links" href="faqs.html">FAQs</a>
+                    <a class="nav-links" href="reviews.html">Reviews</a>  
+                </div>
+                <div class="col-md-1 offset-md-1 nav-icon">
+                    <a href="account.html" style="margin-right: 15px;"><i class="nav-icon fa-regular fa-user"></i></a>
+                    <a href="cart.html"><i class="nav-icon fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+        </div>
+        <div style="background-color: #3A2817; height: 10px; width: 100%;"></div>
+    </div> 
+    <!--mobile nav bar-->
+    <div class="mobile-nav-bar">
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#dropdown-content" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+        <a class="nav-links" href="account.html" style="margin-left: 60%;"><i class="fa-regular fa-user"></i></a>
+        <a class="nav-links" href="cart.html"><i class="fa-solid fa-cart-shopping" style="margin-left: 60%;"></i></a>
+        <div class="collapse" id="dropdown-content">
+            <div class="card card-body">
+                <div class="accordion-body">
+                    <a class="nav-links" href="about-us.html">About Us</a> <br>
+                    <a class="nav-links" href="shop.html">Shop</a><br>
+                    <a class="nav-links" href="Find Us">Find Us</a><br>
+                    <a class="nav-links" href="contact-us.html">Contact Us</a><br>
+                    <a class="nav-links" href="faqs.html">FAQs</a><br>
+                    <a class="nav-links" href="reviews.html">Reviews</a>
+                </div>
+            </div>
+        </div> 
+        <div style="background-color: #3A2817; height: 10px; width: 100%;"></div>
+    </div>
+    <!--contact form-->
+    <div class="contact-form">
+        <div class="row-10">
+            <div class="heading">
+                <h3>Contact Us</h3>
+            </div>
+            <div class="order-form">
+                <div class="row justify-content-around">
+                    <div class="col-md-4">
+                        <div class="input-item">
+                            <label for="full-name">Name<span class="required">*</span></label> <br>
+                            <input type="text" id="fname" name="fname" placeholder="Full Name">
+                        </div>
+                        <div class="input-item">
+                            <label for="email">Email<span class="required">*</span></label><br>
+                            <input type="text" id="email" name="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="input-item">
+                            <label for="phone">Phone Number<span class="required">*</span></label><br>
+                            <input type="text" id="phone" name="phone" placeholder="Phone Number">
+                        </div>
+                        <div class="input-item">
+                            <label for="enquiry-type">Type of Enquiry:<span class="required">*</span></label> <br>
+                            <select name="enquiry-type" id="enquiry-type">
+                                <option value="Corporate Gifting">Corporate Gifting</option>
+                                <option value="Bulk and Wholesale">Bulk and Wholesale</option>
+                                <option value="Events and Celebrations">Events and Celebrations</option>
+                                <option value="Others (please state in your Message)">Others (please state in your Message)</option>
+                            </select>
+                        </div>
+                    </div> 
+                </div>
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <div>
+                            <label for="message">Special requests/ Other remarks:<span class="required">*</span></label> <br>
+                            <textarea rows="5" name="message" placeholder="Message"></textarea>
+                            <div class="send-enquiry">
+                                <a href="#">Sign Up Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--web footer-->
+    <div class="web-footer">
+        <div class="row-footer">
+            <div class="row">
+                <div class="col-md-2">
+                    <a href="index.html"><img class="kacaang-logo" src="images/logo.png"></a>
+                </div>
+                <div class="col-md-2 offset-md-1">
+                    <a class="footer-link" href="shop.html">SHOP</a> <br>
+                    <a class="footer-link" href="shop.html#sales">ON SALE</a> <br>
+                    <a class="footer-link" href="corporate.html">CORPORATE</a> <br>
+                    <a class="footer-link" href="faqs.html">FAQS</a>
+                </div>
+                <div class="col-md-3 offset-md-1">
+                    <a class="footer-link" href="about-us.html">OUR STORY</a> <br>
+                    <a class="footer-link" href="farm.html">OUR FARM</a> <br>
+                    <a class="footer-link" href="#">CASHEW CRAZE CLUB</a> <br>
+                    <a class="footer-link" href="contact-us.html">CONTACT US</a> <br>
+                    <div class="icons">
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <a class="footer-link" href="#">PRIVACY POLICY</a> <br>
+                    <a class="footer-link" href="#">TERMS AND CONDITIONS</a> <br>
+                </div>
+            </div>
+            <div class="copyright">
+                <p class="copyright">COPYRIGHT &copy; 2023 KACAANG. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+        <img src="images/nuts-banner.png" style="width: 100%;">
+    </div>
+    <!--mobile footer-->
+    <div class="mobile-footer">
+        <div class="row-footer">
+            <a href="index.html"><img class="kacaang-logo" src="images/logo.png">
+            <div class="mobile-footer-links">
+                <a class="mobile-footer-links" href="shop.html">SHOP</a> <br>
+                <a class="mobile-footer-links" href="shop.html#sales">ON SALE</a> <br>
+                <a class="mobile-footer-links" href="corporate.html">CORPORATE</a> <br>
+                <a class="mobile-footer-links" href="faqs.html">FAQS</a> <br>
+                <a class="mobile-footer-links" href="about-us.html">OUR STORY</a> <br>
+                <a class="mobile-footer-links" href="farm.html">OUR FARM</a> <br>
+                <a class="mobile-footer-links" href="#">CASHEW CRAZE CLUB</a> <br>
+                <a class="mobile-footer-links" href="contact-us.html">CONTACT US</a> <br>
+                <div class="icons">
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="privacy-tandc">
+                <a class="mobile-footer-links" href="#">PRIVACY POLICY</a> <br>
+                <a class="mobile-footer-links" href="#">TERMS AND CONDITIONS</a>
+            </div>
+            <div class="copyright">
+                <p class="copyright">COPYRIGHT &copy; 2023 KACAANG. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+        <img src="images/nuts-banner.png" style="width: 100%;">
+    </div>
+
+
+</body>
+</html>
