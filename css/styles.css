@@ -1142,30 +1142,76 @@ p {
   }
 }
 
+
+
 @media only screen and (max-width: 465px) {
   .tabacct button {
     font-size: 13px;
   }
 }
 
+
 /*index*/
+/*responsive web index banner*/
+.web-index-image-container {
+  display: block;
+  visibility: visible;
+}
+
+.mobile-index-image-container {
+  display: none;
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  .web-index-image-container {
+      display: none;
+      visibility: hidden;
+  }
+
+  .mobile-index-image-container {
+      display: block;
+      visibility: visible;				
+  }
+}
+
 .bannerclass .actionbutton {
   padding: 12px 36px;
 }
 
-.index-image-container {
+/*web index banner*/
+.web-index-image-container {
   position: relative;
   overflow: hidden;
 }
 
-.index-img {
+.web-index-image-container img {
   width: 100%;
   height: auto;
   display: block;
-  min-height: 500px;
 }
 
-.overlay {
+.web-index-image-container .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.mobile-index-image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.mobile-index-image-container img {
+  width: 100%;
+  height: 600px;
+  display: block;
+}
+
+.mobile-index-image-container .overlay {
   position: absolute;
   top: 50%;
   left: 50%;
