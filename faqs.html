@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>FAQs - KACAANG</title>
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!--css-->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!--favicon-->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <!--fonts used Titan One & Comfortaa-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700&family=Titan+One&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!--AWESOME FONT-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- other language -->
+    <meta charset="utf-8">
+
+    <!-- Media Queries/Viewport -->
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+
+    <!--javascript-->
+    <script src="scripts/faqTabs.js"></script>
+</head>
+
+<body>
+    <!--banner-->
+    <div class="banner">
+        <div class="banner">
+            <img src="images/nav-banner.png" style="width: 100%; vertical-align: top;">
+        </div>
+        <div class="nav-banner">
+            <div class="centered">
+                <a href="index.html"><img src="images/logo.png"></a>
+            </div>
+        </div> 
+    </div>
+    <!--web nav bar-->
+  <div class="web-nav-bar">
+    <div class="row-nav-bar">
+        <div class="row">
+            <div class="nav col-md-10">
+                <a class="nav-links" href="about-us.html">About Us</a>
+                <div class="drop-down">
+                    <a id="shop-link" href="shop.html"></a><button class="btn dropdown-toggle nav-links" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Shop
+                    </button></a>
+                    <div class="dropdown-content">
+                        <a class="dropdown-item" href="shop.html" style="margin-top: 10px;">All Products</a>
+                        <a class="dropdown-item" href="shop.html#sales" style="margin-top: 10px;">On Sale</a>
+                        <a class="dropdown-item" href="corporate.html" style="margin-top: 10px; margin-bottom: 10px;">Corporate Orders</a>
+                    </div>
+                </div>
+                <a class="nav-links" href="find-us.html">Find Us</a>
+                <a class="nav-links" href="contact-us.html">Contact Us</a>
+                <a class="nav-links" href="faqs.html">FAQs</a>
+                <a class="nav-links" href="reviews.html">Reviews</a>  
+            </div>
+            <div class="col-md-1 offset-md-1 nav-icon">
+                <a href="account.html" style="margin-right: 15px;"><i class="nav-icon fa-regular fa-user"></i></a>
+                <a href="cart.html"><i class="nav-icon fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: #3A2817; height: 10px; width: 100%;"></div>
+</div> 
+<!--mobile nav bar-->
+<div class="mobile-nav-bar">
+    <a class="btn btn-primary" data-bs-toggle="collapse" href="#dropdown-content" role="button" aria-expanded="false" aria-controls="collapseExample">
+        <i class="fa-solid fa-bars"></i>
+    </a>
+    <a class="nav-links" href="account.html" style="margin-left: 60%;"><i class="fa-regular fa-user"></i></a>
+    <a class="nav-links" href="cart.html"><i class="fa-solid fa-cart-shopping" style="margin-left: 60%;"></i></a>
+    <div class="collapse" id="dropdown-content">
+        <div class="card card-body">
+            <div class="accordion-body">
+                <a class="nav-links" href="about-us.html">About Us</a> <br>
+                <a class="nav-links" href="shop.html">Shop</a><br>
+                <a class="nav-links" href="find-us.html">Find Us</a><br>
+                <a class="nav-links" href="contact-us.html">Contact Us</a><br>
+                <a class="nav-links" href="faqs.html">FAQs</a><br>
+                <a class="nav-links" href="reviews.html">Reviews</a>
+            </div>
+        </div>
+    </div> 
+    <div style="background-color: #3A2817; height: 10px; width: 100%;"></div>
+</div>
+
+    <div class="page-20-percent">
+
+        <div class="bannerclass text-center">
+            <h1>Frequently Asked Questions (FAQs)</h1>
+        </div>
+
+        <!-- tab buttons -->
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'product')" id="defaultOpen">Product</button>
+            <button class="tablinks" onclick="openTab(event, 'loyalty')">Loyalty</button>
+            <button class="tablinks" onclick="openTab(event, 'general')">General</button>
+        </div>
+        <!-- tab contents -->
+        <!-- product tab -->
+        <div id="product" class="tabcontent">
+            <div class="accordion accordion-flush" id="accordionQuestions">
+                <!--q1-->
+                <div class="accordion-item">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#qnOneAnswer" aria-expanded="true" aria-controls="flush-collapseOne">
+                        <h5>What makes Kacaang snacks different from others?</h5>
+                    </button>
+                    <div id="qnOneAnswer" class="accordion-collapse collapse">
+                        <h6 class="accordion-body">At Kacaang, we infuse our cashews with a blend of well-loved Singaporean flavours. Our commitment to sustainability, fresh locally sourced cashews, and delicious flavours sets us apart. Try it, and you'll taste the difference!</h6>
+                    </div>
+                </div>
+                <!--q2-->
+                <div class="accordion-item">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#qnTwoAnswer" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <h5>Where are your cashews sourced from?</h5>
+                    </button>
+
+                    <div id="qnTwoAnswer" class="accordion-collapse collapse">
+                        <h6 class="accordion-body">We proudly source our cashews locally to ensure freshness as well as sustainable practices.</h6>
+                    </div>
+                </div>
+                <!--q3-->
+                <div class="accordion-item">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#qnThreeAnswer" aria-expanded="false" aria-controls="flush-collapseThree">
+                        <h5>Are your packaging materials eco-friendly?</h5>
+                    </button>
+
+                    <div id="qnThreeAnswer" class="accordion-collapse collapse">
+                        <h6 class="accordion-body">Yes! We're committed to sustainability. Our packaging is designed with eco-friendly materials to minimise environmental impact.</h6>
+                    </div>
+                </div>
+                <!--q4-->
+                <div class="accordion-item">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#qnFourAnswer" aria-expanded="true" aria-controls="flush-collapseOne">
+                        <h5>Are your snacks gluten-free?</h5>
+                    </button>
+
+                    <div id="qnFourAnswer" class="accordion-collapse collapse">
+                        <h6 class="accordion-body">Our snacks are gluten-free, making them suitable for those with gluten sensitivities.</h6>
+                    </div>
+                </div>
+                <!--q5-->
+                <div class="accordion-item">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#qnFiveAnswer" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <h5>Are your products suitable for vegans/vegetarians?</h5>
+                    </button>
+
+                    <div id="qnFiveAnswer" class="accordion-collapse collapse">
+                        <h6 class="accordion-body">Absolutely! All our nut snacks are vegan-friendly, made solely from the goodness of cashews.</h6>
+                    </div>
+                </div>
+                <!--q6-->
+                <div class="accordion-item">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#qnSixAnswer" aria-expanded="false" aria-controls="flush-collapseThree">
+                        <h5>What are the benefits of eating cashew nuts?</h5>
+                    </button>
+
+                    <div id="qnSixAnswer" class="accordion-collapse collapse">
+                        <h6 class="accordion-body">Cashew nuts are a nutrient-packed snack, rich in healthy fats, vitamins, minerals, and antioxidants, promoting heart health, supporting weight management, and contributing to overall well-being.
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <!--additional questions-->
+            <h6 class="additionalQn">Still have questions? <br> Fill up our <a href="contact-us.html"
+                    class="contact-link">contact form</a> and we will get back to you within 2-3 working days!
+            </h6>
+        </div>
+
+        <!-- loyalty tab -->
+        <div id="loyalty" class="tabcontent">
+            <div class="accordion accordion-flush" id="accordionQuestions">
+                <!--q1-->
+                <div class="accordion-item">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#qnOneAnswer" aria-expanded="true" aria-controls="flush-collapseOne">
+                        <h5>How do I become a C&sup3 member? Is it free?</h5>
+                    </button>
+                    <div id="qnOneAnswer" class="accordion-collapse collapse">
+                        <h6 class="accordion-body">To join our exclusive Cashew Craze Club, simply create a Kacaang account. Once you're in, you're part of the nutty journey and earn 150 points! And yes, it’s completely free!
+                        </h6>
+                    </div>
+                </div>
+                <!--q2-->
+                <div class="accordion-item">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#qnTwoAnswer" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <h5>How are points earned in the C&sup3 Membership?</h5>
+                    </button>
+
+                    <div id="qnTwoAnswer" class="accordion-collapse collapse">
+                        <h6 class="accordion-body">Members earn 10 points for every dollar spent. It's our way of giving back to you with every nutty purchase!
+                        </h6>
+                    </div>
+                </div>
+                <!--q3-->
+                <div class="accordion-item">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#qnThreeAnswer" aria-expanded="false" aria-controls="flush-collapseThree">
+                        <h5>What can I redeem with my accumulated points?</h5>
+                    </button>
+
+                    <div id="qnThreeAnswer" class="accordion-collapse collapse">
+                        <h6 class="accordion-body">Accumulate points and treat yourself! Redeem points for discount vouchers and free delivery vouchers to enhance your snacking experience.
+                        </h6>
+                    </div>
+                </div>
+                <!--q4-->
+                <div class="accordion-item">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#qnFourAnswer" aria-expanded="true" aria-controls="flush-collapseOne">
+                        <h5>Can I use multiple vouchers in one transaction?</h5>
+                    </button>
+
+                    <div id="qnFourAnswer" class="accordion-collapse collapse">
+                        <h6 class="accordion-body">While you can accumulate vouchers, only one voucher can be used per transaction. Choose the one that suits your snacking mood!</h6>
+                    </div>
+                </div>
+                <!--q5-->
+                <div class="accordion-item">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#qnFiveAnswer" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <h5>How do I keep track of my C&sup3 points? Do they expire?</h5>
+                    </button>
+
+                    <div id="qnFiveAnswer" class="accordion-collapse collapse">
+                        <h6 class="accordion-body">Easily monitor your points through your Kacaang account. It's your dashboard for all things nutty, including your C&sup3 points balance. <br><br>
+
+                            Yes, points earned from a purchase expire one year after the purchase date. Snack regularly to make the most of your points!</h6>
+                    </div>
+                </div>
+                <!--q6-->
+                <div class="accordion-item">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#qnSixAnswer" aria-expanded="false" aria-controls="flush-collapseThree">
+                        <h5>Tell me about the C&sup3 referral program.</h5>
+                    </button>
+
+                    <div id="qnSixAnswer" class="accordion-collapse collapse">
+                        <h6 class="accordion-body">Spread the nutty love! For every successful referral (referee makes a minimum $10 purchase), you earn 50 points. It's a win-win for nut enthusiasts!</h6>
+                    </div>
+                </div>
+            </div>
+            <!--additional questions-->
+            <h6 class="additionalQn">Still have questions? <br> Fill up our <a href="contact-us.html"
+                    class="contact-link">contact form</a> and we will get back to you within 2-3 working days!
+            </h6>
+        </div>
+
+        <!-- general tab -->
+        <div id="general" class="tabcontent">
+            <div class="accordion accordion-flush" id="accordionQuestions">
+                <!--q1-->
+                <div class="accordion-item">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#qnOneAnswer" aria-expanded="true" aria-controls="flush-collapseOne">
+                        <h5>How long will the delivery take?</h5>
+                    </button>
+                    <div id="qnOneAnswer" class="accordion-collapse collapse">
+                        <h6 class="accordion-body">Our standard delivery time is 2-3 days. Please note that delivery durations may vary for corporate or bulk orders. Rest assured, we take pride in our reliable and prompt delivery services. </h6>
+                    </div>
+                </div>
+                <!--q2-->
+                <div class="accordion-item">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#qnTwoAnswer" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <h5>Can my order be expedited?</h5>
+                    </button>
+
+                    <div id="qnTwoAnswer" class="accordion-collapse collapse">
+                        <h6 class="accordion-body">Absolutely! If you require expedited processing for your order, please get in touch with us through the contact form. For immediate assistance, feel free to reach out to us at +65 8186 0985. We're here to ensure a swift and satisfactory experience for you.</h6>
+                    </div>
+                </div>
+                <!--q3-->
+                <div class="accordion-item">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#qnThreeAnswer" aria-expanded="false" aria-controls="flush-collapseThree">
+                        <h5>Do you provide free samples?</h5>
+                    </button>
+
+                    <div id="qnThreeAnswer" class="accordion-collapse collapse">
+                        <h6 class="accordion-body">While we don't offer free samples at the moment, stay tuned for our exclusive pop-up events! It will be a delightful opportunity to experience our newest flavours firsthand. Keep an eye out for updates and get ready to treat your taste buds!</h6>
+                    </div>
+                </div>
+                <!--q4-->
+                <div class="accordion-item">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#qnFourAnswer" aria-expanded="true" aria-controls="flush-collapseOne">
+                        <h5>Do you offer bulk or corporate orders?</h5>
+                    </button>
+
+                    <div id="qnFourAnswer" class="accordion-collapse collapse">
+                        <h6 class="accordion-body">Absolutely! Contact our team via our corporate form for information on bulk and corporate orders, and we'll be delighted to assist you.</h6>
+                    </div>
+                </div>
+                <!--q5-->
+                <div class="accordion-item">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#qnFiveAnswer" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <h5>What payment methods do you accept?</h5>
+                    </button>
+
+                    <div id="qnFiveAnswer" class="accordion-collapse collapse">
+                        <h6 class="accordion-body">We accept various payment methods, including credit cards (Visa, Mastercard, AMEX), debit cards, PayLah!, and PayNow.</h6>
+                    </div>
+                </div>
+                <!--q6-->
+                <div class="accordion-item">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#qnSixAnswer" aria-expanded="false" aria-controls="flush-collapseThree">
+                        <h5>How can I stay updated on new flavours and promotions?</h5>
+                    </button>
+
+                    <div id="qnSixAnswer" class="accordion-collapse collapse">
+                        <h6 class="accordion-body">
+                            Stay in the loop by subscribing to our newsletter and following us on social media for the latest flavours, promotions, and nutty updates!
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <!--additional questions-->
+            <h6 class="additionalQn">Still have questions? <br> Fill up our <a href="contact-us.html"
+                    class="contact-link">contact form</a> and we will get back to you within 2-3 working days!
+            </h6>
+        </div>
+    </div>
+    <!--web footer-->
+    <div class="web-footer">
+        <div class="row-footer">
+            <div class="row">
+                <div class="col-md-2">
+                    <a href="index.html"><img class="kacaang-logo" src="images/logo.png"></a>
+                </div>
+                <div class="col-md-2 offset-md-1">
+                    <a class="footer-link" href="shop.html">SHOP</a> <br>
+                    <a class="footer-link" href="shop.html">SALES</a> <br>
+                    <a class="footer-link" href="corporate.html">OCCASIONS</a> <br>
+                    <a class="footer-link" href="corporate.html">CORPORATE</a> <br>
+                    <a class="footer-link" href="faqs.html">FAQS</a>
+                </div>
+                <div class="col-md-3 offset-md-1">
+                    <a class="footer-link" href="about-us.html">OUR STORY</a> <br>
+                    <a class="footer-link" href="farm.html">OUR FARM</a> <br>
+                    <a class="footer-link" href="account.html">CASHEW CRAZE CLUB</a> <br>
+                    <a class="footer-link" href="contact-us.html">CONTACT US</a> <br>
+                    <div class="icons">
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <a class="footer-link" href="#">PRIVACY POLICY</a> <br>
+                    <a class="footer-link" href="#">TERMS AND CONDITIONS</a> <br>
+                </div>
+            </div>
+            <div class="copyright">
+                <p class="copyright">COPYRIGHT &copy; 2023 KACAANG. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+        <img src="images/nuts-banner.png" style="width: 100%;">
+    </div>
+    <!--mobile footer-->
+    <div class="mobile-footer">
+        <div class="row-footer">
+            <a href="index.html"><img class="kacaang-logo" src="images/logo.png">
+            <div class="mobile-footer-links">
+                <a class="mobile-footer-links" href="shop.html">SHOP</a> <br>
+                <a class="mobile-footer-links" href="shop.html">PROMOTIONS</a> <br>
+                <a class="mobile-footer-links" href="corporate.html">OCCASIONS</a> <br>
+                <a class="mobile-footer-links" href="corporate.html">CORPORATE</a> <br>
+                <a class="mobile-footer-links" href="faqs.html">FAQS</a> <br>
+                <a class="mobile-footer-links" href="about-us.html">OUR STORY</a> <br>
+                <a class="mobile-footer-links" href="farm.html">OUR FARM</a> <br>
+                <a class="mobile-footer-links" href="account.html">CASHEW CRAZE CLUB</a> <br>
+                <a class="mobile-footer-links" href="contact-us.html">CONTACT US</a> <br>
+                <div class="icons">
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="privacy-tandc">
+                <a class="mobile-footer-links" href="#">PRIVACY POLICY</a> <br>
+                <a class="mobile-footer-links" href="#">TERMS AND CONDITIONS</a>
+            </div>
+            <div class="copyright">
+                <p class="copyright">COPYRIGHT &copy; 2023 KACAANG. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+        <img src="images/nuts-banner.png" style="width: 100%;">
+    </div>
+</body>
+
+</html>
