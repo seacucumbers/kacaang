@@ -445,14 +445,44 @@ p {
   /* padding-bottom: 15px; */
   border-radius: 10px;
 }
+<<<<<<< HEAD
 
 .shop-content h5 {
+=======
+.shop-content h6 {
+>>>>>>> charlotte
   padding-top: 15px;
+  font-weight: 900;
 }
+<<<<<<< HEAD
 
 .shop-content h4 {
   padding-bottom: 5px;
 }
+=======
+.shop-content p {
+  margin-bottom: 0.5rem;
+}
+.shop-price-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* for shop page */
+.font-16 {
+  font-family: 'Comfortaa', sans-serif;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+.sales-red-text {
+  color: #C33527;
+}
+
+s {
+  text-decoration-color: #C33527;
+  color: #3A2817;
+}
+>>>>>>> charlotte
 
 .shop-review-line img {
   padding-bottom: 0;
@@ -567,6 +597,19 @@ p {
   color: #CF5B26;
   padding: 5px 0;
 }
+.product-size-contents p {
+  margin-bottom:0;
+}
+.product-size-contents s {
+  text-decoration-color: #CF5B26;
+  color: #3A2817;
+}
+.bundle-sales-orange-text {
+  color: #CF5B26;
+}
+/* .bundle-sales-orange-text:hover {
+  color: #ECE9D5;
+} */
 
 .prod-cart-contents {
   text-align: center;
@@ -637,6 +680,7 @@ p {
 
 }
 
+
 .prod-cart-qty p {
   color: #CF5B26;
   font-size: 15px;
@@ -691,12 +735,13 @@ p {
 
 .col-md-3 img {
   width: 100%;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
 }
 
 @media only screen and (max-width:720px) {
   .flavours {
-    gap: 2rem;
+    gap: 0.5rem;
   }
 
   .col-md-2 img {
@@ -994,6 +1039,30 @@ p {
   border-radius: 12px;
 }
 
+<<<<<<< HEAD
+=======
+.pdpa-page ol {
+  display: list-item;
+  font-family: 'Comfortaa', sans-serif;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.pdpa-page h1 {
+  text-align: center;
+}
+
+
+/* index page yuwen's shop-product */
+.sales-yellow-text {
+  color: #EDA23F;
+}
+.sales-yellow-text s {
+  text-decoration-color: #EDA23F;
+  color: #ECE9D5;
+}
+
+>>>>>>> charlotte
 /* faqs, index, cart, account common */
 .bannerclass h1 {
   padding-bottom: 56px;
@@ -1038,7 +1107,11 @@ p {
 @media (max-width: 992px) {
 
   .checkout .col-md-8,
+<<<<<<< HEAD
   .checkout .col-md-4 {
+=======
+  .checkout . {
+>>>>>>> charlotte
     width: 100%;
     display: block;
   }
@@ -1115,6 +1188,7 @@ p {
   }
 }
 
+<<<<<<< HEAD
 .web-stars {
   display: block;
   visibility: visible;
@@ -1124,6 +1198,8 @@ p {
   display: none;
   visibility: hidden;
 }
+=======
+>>>>>>> charlotte
 
 @media only screen and (max-width: 575px) {
   .page-20-percent {
@@ -1239,12 +1315,20 @@ p {
   --bs-gutter-x: 0;
 }
 
+<<<<<<< HEAD
 .shop-product h5 {
+=======
+.index-shop-product h5 {
+>>>>>>> charlotte
   padding-top: 15px;
   color: #ECE9D5;
 }
 
+<<<<<<< HEAD
 .shop-product h6 {
+=======
+.index-shop-product h6 {
+>>>>>>> charlotte
   padding-bottom: 5px;
   color: #ECE9D5;
 }
