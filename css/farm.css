@@ -845,10 +845,6 @@ textarea[name="message"] {
     color: #3A2817 !important;
 }
 
-.web-subscription button:hover {
-    color: #3A2817 !important;
-}
-
 .fa-brands {
     color: #EDA23F;
     font-size: 20px;
