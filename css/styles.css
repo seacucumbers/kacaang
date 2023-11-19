@@ -24,38 +24,39 @@ h1 {
   font-size: 56px;
   letter-spacing: 1px;
   color:#3A2817;
-  }
+}
   
-  h3 {
+h3 {
   font-family: 'Titan One', sans-serif;
   font-size: 38px;
   letter-spacing: 1px;
   color:#3A2817;
-  }
-  h4 {
+}
+h4 {
     font-family: 'Comfortaa', sans-serif;
     font-size: 28px;
     letter-spacing: 1px;
     color:#3A2817;
-    }
+}
   
-  h5 {
+h5 {
   font-family: 'Comfortaa', sans-serif;
   font-size: 22px;
   letter-spacing: 1px;
-  }
+}
   
-  h6 {
+h6 {
   font-family: 'Comfortaa', sans-serif;
   letter-spacing: 1px;
   font-size: 18px;
-  }
+}
   
-  p {
+p {
   font-family: 'Comfortaa', sans-serif;
   letter-spacing: 1px;
   font-size: 14px;
-  }
+}
+
 .page-10-percent {
     padding: 56px 10% 80px;
 }
@@ -446,7 +447,7 @@ h1 {
 .sale-tag-img-2 {
   height: 90px;
   position: absolute;
-  top: 1627px;
+  top: 1618px;
   left: 9%;
   z-index: 2;
 }
@@ -500,11 +501,31 @@ h1 {
   }
 }
 
-.shop-content h5 {
+.shop-content h6 {
   padding-top: 15px;
+  font-weight: 900;
 }
-.shop-content h4 {
-    padding-bottom: 5px;
+.shop-content p {
+  margin-bottom: 0.5rem;
+}
+.shop-price-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* for shop page */
+.font-16 {
+  font-family: 'Comfortaa', sans-serif;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+.sales-red-text {
+  color: #C33527;
+}
+
+s {
+  text-decoration-color: #C33527;
+  color: #3A2817;
 }
 .shop-review-line img {
     padding-bottom: 0;
@@ -611,6 +632,19 @@ h1 {
   color:#CF5B26;
   padding: 5px 0;
 }
+.product-size-contents p {
+  margin-bottom:0;
+}
+.product-size-contents s {
+  text-decoration-color: #CF5B26;
+  color: #3A2817;
+}
+.bundle-sales-orange-text {
+  color: #CF5B26;
+}
+/* .bundle-sales-orange-text:hover {
+  color: #ECE9D5;
+} */
 
 .prod-cart-contents {
   text-align: center;
@@ -667,8 +701,8 @@ h1 {
 .product-size-contents button:hover {
   background-color: #CF5B26;
   color:#ECE9D5;
-
 }
+
 
 .prod-cart-qty p {
   color: #CF5B26;
@@ -720,7 +754,7 @@ h1 {
 
 @media only screen and (max-width:720px) {
   .flavours {
-    gap: 2rem;
+    gap: 0.5rem;
   }
   .col-md-2 img {
     width: 70%;
