@@ -1038,8 +1038,14 @@ s {
 }
 
 
-
-
+/* index page yuwen's shop-product */
+.sales-yellow-text {
+  color: #EDA23F;
+}
+.sales-yellow-text s {
+  text-decoration-color: #EDA23F;
+  color: #ECE9D5;
+}
 
 /* faqs, index, cart, account common */
 .bannerclass h1 {
@@ -1085,7 +1091,7 @@ s {
 @media (max-width: 992px) {
 
   .checkout .col-md-8,
-  .checkout .col-md-4 {
+  .checkout . {
     width: 100%;
     display: block;
   }
@@ -1162,15 +1168,6 @@ s {
   }
 }
 
-.web-stars {
-  display: block;
-  visibility: visible;
-}
-
-.mobile-stars {
-  display: none;
-  visibility: hidden;
-}
 
 @media only screen and (max-width: 575px) {
   .page-20-percent {
@@ -1286,12 +1283,12 @@ s {
   --bs-gutter-x: 0;
 }
 
-.shop-product h5 {
+.index-shop-product h5 {
   padding-top: 15px;
   color: #ECE9D5;
 }
 
-.shop-product h6 {
+.index-shop-product h6 {
   padding-bottom: 5px;
   color: #ECE9D5;
 }
